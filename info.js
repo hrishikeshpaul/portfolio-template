@@ -65,6 +65,38 @@ let info = {
         },
 
     ],
+    skills: [
+        {
+            title: 'languages',
+            info: ['Python', 'Java', 'Javascript', 'C', 'C++', 'SQL', 'NoSQL', 'Ruby'],
+            icon: 'fa fa-code'
+        },
+        {
+            title: 'data frameworks',
+            info: ['Keras', 'Numpy', 'Pandas', 'OpenCV', 'SciPy', 'Sklearn', 'LibROSA', 'Pillow'],
+            icon: 'fa fa-cubes'
+        },
+        {
+            title: 'web technologies',
+            info: ['Vue', 'React', 'Angular', 'Node', 'Flask', 'HTML', 'CSS'],
+            icon: 'fas fa-laptop-code'
+        },
+        {
+            title: 'databases',
+            info: ['MongoDB', 'MySQL', 'OracleSQL', 'Neo4j'],
+            icon: 'fa fa-database'
+        },
+        {
+            title: 'Ooperating systems',
+            info: ['MacOS', 'Ubuntu', 'Windows', 'Android'],
+            icon: 'fa fa-laptop'
+        },
+        {
+            title: 'tools',
+            info: ['Agile', 'Scrum', 'JIRA', 'Heroku', 'Firebase', 'AWS S3'],
+            icon: 'fas fa-tools'
+        }
+    ]
 }
 
 export default info;

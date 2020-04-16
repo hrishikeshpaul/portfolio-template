@@ -11,9 +11,6 @@
                     <Timeline :data="experience"/>
                 </div>
             </div>
-
-            <p class="title pgray text-center">skills</p>
-            <hr width="50%" />
         </div>
     </div>
 </template>
@@ -21,11 +18,12 @@
 <script>
 import Timeline from './helpers/Timeline'
 import info from '../../info'
-
+import Skills from './Skills'
 export default {
     name: 'About',
     components: {
-        Timeline
+        Timeline,
+        Skills
     },
     data() { 
         return {
