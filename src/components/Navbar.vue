@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import Logo from './Logo'
+import Logo from './helpers/Logo'
 export default {
     name: "Navbar",
     components: {
