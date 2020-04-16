@@ -5,6 +5,7 @@
     <Navbar />
     <div class="parent">
       <Home />
+      <Experience />
     </div>
   </div>
 </template>
@@ -12,12 +13,14 @@
 <script>
 import Navbar from './components/Navbar.vue'
 import Home from './components/Home'
+import Experience from './components/About'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Home
+    Home,
+    Experience
   }
 }
 </script>

@@ -2,15 +2,15 @@
     <div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
+                <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
                     <img :src="picture" />
                 </div>
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
-                    <span class="home-title pgray">Hello there!</span>
+                    <span class="home-title pgray">hello there!</span>
                     <div>
                         <p>{{description}}</p>
                     </div>
-                    <div class='text-center'>
+                    <div class='text-center pb-5'>
                         <button class="btn mx-2" @click="open('linkedin')"><i class="fa fa-linkedin"></i></button>
                         <button class="btn mx-2" @click="open('github')"><i class="fa fa-github"></i></button>
                         <button class="btn mx-2" @click="open('angellist')"><i class="fa fa-angellist"></i></button>
@@ -55,12 +55,25 @@ export default {
 
 <style scoped>
 .home-title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
 }
 
 img {
     transform: rotateY(180deg);
+    
+}
+
+@media only screen and (max-width: 600px) {
+    img {
+        object-fit: cover;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(205, 205, 205);
+    }
 }
 
 .fa {
