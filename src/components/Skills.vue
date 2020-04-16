@@ -51,14 +51,14 @@ export default {
 
 .fa { 
     color: rgb(212, 149, 97);
-    font-size: 45px;
+    font-size: 40px;
     /* font-weight: bold; */
     transition: all 0.5s;
 }
 
 .fas { 
     color:  rgb(212, 149, 97);
-    font-size: 45px;
+    font-size: 40px;
     /* font-weight: bold; */
     transition: all 0.5s;
 }

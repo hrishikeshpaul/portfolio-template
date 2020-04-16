@@ -87,7 +87,7 @@ let info = {
             icon: 'fa fa-database'
         },
         {
-            title: 'Ooperating systems',
+            title: 'Operating systems',
             info: ['MacOS', 'Ubuntu', 'Windows', 'Android'],
             icon: 'fa fa-laptop'
         },
