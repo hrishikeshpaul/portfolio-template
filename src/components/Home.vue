@@ -8,7 +8,7 @@
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
                     <span class="home-title pgray">Hello there!</span>
                     <div>
-                        <p>I'm {{name}}, a technology enthusiast currently pursuing my Master's in Computer Science at Indiana University Bloomington. Majority of my work consists of web and software development, but lately I have been spending time in the field of Artificial Intelligence and Computer Vision.</p>
+                        <p>{{description}}</p>
                     </div>
                     <div class='text-center'>
                         <button class="btn mx-2" @click="open('linkedin')"><i class="fa fa-linkedin"></i></button>
@@ -32,6 +32,7 @@ export default {
     data () {
         return {
             picture: info.flat_picture,
+            description: info.description,
             name: info.name,
             linkedin: info.links.linkedin,
             github: info.links.github,
