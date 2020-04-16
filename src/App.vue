@@ -45,8 +45,9 @@ export default {
 }
 
 .parent {
-  margin-top: 80px;
+  margin-top: 120px;
   position: relative;
+  /* background-color: red; */
 }
 
 .pgray {

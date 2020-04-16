@@ -1,6 +1,6 @@
 <template>
     <div class="container py-4">
-        <p class="title pgray text-center">skills</p>
+        <p class="title pgray text-center">skills.</p>
             <hr width="50%" />
             <br />
         <div class="row">
@@ -32,16 +32,16 @@ export default {
 <style scoped>
 .title {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 500;
 }
 .title1 {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 .title2 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .title3 {
@@ -49,23 +49,18 @@ export default {
     font-weight: 400;
 }
 
-.fa, .fas { 
+.fa { 
     color: rgb(117, 166, 186);
     font-size: 45px;
     /* font-weight: bold; */
     transition: all 0.5s;
 }
 
-/* .bg-div {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%; 
-    background-color: grey;
-} */
-
-.badge:hover { 
+.fas { 
+    color: rgb(117, 166, 186);
+    font-size: 45px;
+    /* font-weight: bold; */
     transition: all 0.5s;
-    box-shadow: 2px 2px 5px rgb(179, 179, 179);
-
 }
+
 </style>

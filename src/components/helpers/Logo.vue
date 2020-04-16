@@ -21,14 +21,14 @@ export default {
 
 <style scoped>
 .logo-title-name {
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 35px;
+    font-weight: 500;
     letter-spacing: 1px;
 }
 
 .logo-title-dot {
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 </style>

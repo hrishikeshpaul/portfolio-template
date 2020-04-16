@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
 .nav-link {
-  font-weight: bold;
+  font-weight: 400;
 }
 </style>

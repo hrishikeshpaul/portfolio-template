@@ -43,6 +43,6 @@ export default {
 <style scoped>
 .title {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 500;
 }
 </style>

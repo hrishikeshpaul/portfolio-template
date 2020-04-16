@@ -36,22 +36,23 @@ export default {
 <style scoped>
 .title1 {
     font-size: 24px;
-    font-weight: 800;
+    font-weight: 500;
 }
 
 .title2 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .title3 {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .badge { 
     background-color: rgb(211, 227, 233);
     transition: all 0.5s;
+    font-weight: 500;
 }
 
 .badge:hover { 
@@ -62,7 +63,7 @@ export default {
 
 .date {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 ul.timeline {

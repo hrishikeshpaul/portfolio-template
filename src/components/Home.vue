@@ -5,15 +5,15 @@
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
                     <img :src="picture" />
                 </div>
-                <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
+                <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
                     <span class="home-title pgray">hello there!</span>
                     <div>
                         <p>{{description}}</p>
                     </div>
-                    <div class='text-center pb-5'>
-                        <button class="btn mx-2" @click="open('linkedin')"><i class="fa fa-linkedin"></i></button>
-                        <button class="btn mx-2" @click="open('github')"><i class="fa fa-github"></i></button>
-                        <button class="btn mx-2" @click="open('angellist')"><i class="fa fa-angellist"></i></button>
+                    <div class='text-center pb-4'>
+                        <button class="btn mx-2" @click="open('linkedin')"><i class="fab fa-linkedin"></i></button>
+                        <button class="btn mx-2" @click="open('github')"><i class="fab fa-github"></i></button>
+                        <button class="btn mx-2" @click="open('angellist')"><i class="fab fa-angellist"></i></button>
                         <button class="btn mx-2" @click="open('resume')"><i class="fa fa-file"></i></button>
                     </div>
                 </div>
@@ -56,7 +56,11 @@ export default {
 <style scoped>
 .home-title {
     font-size: 28px;
-    font-weight: 600;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
 }
 
 img {
