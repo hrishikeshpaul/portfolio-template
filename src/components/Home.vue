@@ -1,5 +1,7 @@
 <template>
     <div>
+        <div>
+        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
@@ -59,10 +61,6 @@ export default {
     font-weight: 500;
 }
 
-p {
-    font-weight: 400;
-}
-
 img {
     transform: rotateY(180deg);
     
@@ -108,5 +106,12 @@ img {
 
 p {
     text-align: justify;
+    font-weight: 400;
 }
+
+/* LEAVES */
+
+
+
+
 </style>

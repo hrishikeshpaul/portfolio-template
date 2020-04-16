@@ -45,7 +45,8 @@ export default {
 }
 
 .parent {
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-top: 40px;
   position: relative;
   /* background-color: red; */
 }
