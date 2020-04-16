@@ -5,7 +5,7 @@
                 <div class="col-xl-12 col-bg-12 col-sm-6">
                     <p class="title1">{{data.title}}</p>
                     <ul class="timeline m-0 pt-1" v-for="e in data.data" :key="e.name">
-                        <li class="m-0">
+                        <li class="m-0 pb-2">
                             <div style="">
                                 <div class="px-2 title2">{{e.name}}, {{e.place}}</div>
                                 <div class="px-2 title3">{{e.degree || e.position}} {{e.gpa ? '(' + e.gpa + ')' : ''}}</div>
