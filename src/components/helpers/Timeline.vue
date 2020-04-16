@@ -51,6 +51,13 @@ export default {
 
 .badge { 
     background-color: rgb(211, 227, 233);
+    transition: all 0.5s;
+}
+
+.badge:hover { 
+    transition: all 0.5s;
+    box-shadow: 2px 2px 5px rgb(179, 179, 179);
+
 }
 
 .date {

@@ -12,14 +12,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Experiences</a>
+              <a class="nav-link" href="#">experiences</a>
             </li>
             <li class="nav-item mx-2 ">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#">portfolio</a>
             </li>
             <li class="nav-item mx-2">
               
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">contact</a>
             </li>
           </ul>
         </div>
