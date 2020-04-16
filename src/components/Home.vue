@@ -10,6 +10,12 @@
                     <div>
                         <p>I'm {{name}}, a technology enthusiast currently pursuing my Master's in Computer Science at Indiana University Bloomington. Majority of my work consists of web and software development, but lately I have been spending time in the field of Artificial Intelligence and Computer Vision.</p>
                     </div>
+                    <div class='text-center'>
+                        <button class="btn mx-2" @click="open('linkedin')"><i class="fa fa-linkedin"></i></button>
+                        <button class="btn mx-2" @click="open('github')"><i class="fa fa-github"></i></button>
+                        <button class="btn mx-2" @click="open('angellist')"><i class="fa fa-angellist"></i></button>
+                        <button class="btn mx-2" @click="open('resume')"><i class="fa fa-file"></i></button>
+                    </div>
                 </div>
         </div>
         </div>
@@ -17,13 +23,30 @@
 </template>
 
 <script>
-import potrait from '../assets/potrait.jpg'
+import info from '../../info'
+
 export default {
     name: "Home",
+    components: {
+    },
     data () {
         return {
-            picture: potrait,
-            name: "Hrishikesh Paul"
+            picture: info.flat_picture,
+            name: info.name,
+            linkedin: info.links.linkedin,
+            github: info.links.github,
+            angellist: info.links.angellist,
+            resume: info.links.resume
+        }
+    },
+    methods: {
+        open(link) {
+            switch (link) {
+                case 'linkedin': window.open(this.linkedin, '_blank'); break;
+                case 'github': window.open(this.github, '_blank'); break;
+                case 'angellist': window.open(this.angellist, '_blank'); break;
+                case 'resume': window.open(this.resume, '_blank'); break;
+            }
         }
     }
 }
@@ -37,5 +60,35 @@ export default {
 
 img {
     transform: rotateY(180deg);
+}
+
+.fa {
+    font-size: 15px;
+}
+
+.btn {
+    background-color: #535a5e;
+    border-radius: 50%;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #72797d;
+    border-radius: 50%;
+    color: white;
+}
+
+.btn:active {
+    background-color: #3c3d3e;
+    border-radius: 50%;
+    color: white;
+}
+
+.btn:focus {
+    outline: none !important;
+}
+
+p {
+    text-align: justify;
 }
 </style>

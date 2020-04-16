@@ -6,11 +6,13 @@
 </template>
 
 <script>
+import info from '../../info'
+
 export default {
     name: "Logo",
     data () {
         return {
-            name: "paul",
+            name: info.logo_name,
             dot: '.'
         }
     }
