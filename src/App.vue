@@ -2,13 +2,12 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Navbar />
+    <Navbar @scroll="scrollTo"/>
     <div class="parent">
       <Home />
-      <About />
-      <Skills />
-      <Portfolio />
-      <div style="height: 20vh"></div>
+      <About id="about" />
+      <Skills id="skills" />
+      <Portfolio id="portfolio" />
     </div>
   </div>
 </template>
@@ -28,6 +27,13 @@ export default {
     About,
     Skills,
     Portfolio
+  },
+  methods: {
+    scrollTo(ele) {
+      
+      var elementPosition = document.getElementById(ele).offsetTop;
+      window.scrollTo({top: elementPosition+5, behavior: 'smooth'});
+    }
   }
 }
 </script>
