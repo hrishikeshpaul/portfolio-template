@@ -144,4 +144,21 @@ div.img-div {
     box-shadow: 2px 2px 5px rgb(179, 179, 179);
 
 }
+
+.btn {
+    border-color: #669DB3FF;
+    color: #669DB3FF
+}
+
+.btn:hover {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
+    color: white;
+}
+
+.btn:focus {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
+    color: white;
+}
 </style>

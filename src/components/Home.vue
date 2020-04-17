@@ -13,10 +13,10 @@
                         <p>{{description}}</p>
                     </div>
                     <div class='text-center pb-4'>
-                        <button class="btn mx-2" @click="open('linkedin')"><i class="fab fa-linkedin"></i></button>
-                        <button class="btn mx-2" @click="open('github')"><i class="fab fa-github"></i></button>
-                        <button class="btn mx-2" @click="open('angellist')"><i class="fab fa-angellist"></i></button>
-                        <button class="btn mx-2" @click="open('resume')"><i class="fa fa-file"></i></button>
+                        <button class="btn btn-outline-secondary mx-2 " @click="open('linkedin')"><i class="fab fa-linkedin"></i></button>
+                        <button class="btn btn-outline-secondary mx-2" @click="open('github')"><i class="fab fa-github"></i></button>
+                        <button class="btn btn-outline-secondary mx-2" @click="open('angellist')"><i class="fab fa-angellist"></i></button>
+                        <button class="btn btn-outline-secondary mx-2" @click="open('resume')"><i class="fa fa-file"></i></button>
                     </div>
                 </div>
         </div>
@@ -83,20 +83,19 @@ img {
 }
 
 .btn {
-    background-color: #535a5e;
-    border-radius: 50%;
-    color: white;
+    border-color: #669DB3FF;
+    color: #669DB3FF
 }
 
 .btn:hover {
-    background-color: #72797d;
-    border-radius: 50%;
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
     color: white;
 }
 
-.btn:active {
-    background-color: #3c3d3e;
-    border-radius: 50%;
+.btn:focus {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
     color: white;
 }
 
