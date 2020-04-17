@@ -10,8 +10,7 @@
                                 <div class="px-2 title2">{{e.name}}, {{e.place}}</div>
                                 <div class="px-2 title3">{{e.degree || e.position}} {{e.gpa ? '(' + e.gpa + ')' : ''}}</div>
                                 <div class="px-2 date">{{e.date}}</div>
-                                <br />
-                                <div class="px-2 pb-2" style="text-align: justify;">{{e.description}}</div>
+                                <div class="px-2 pb-2 pt-2" style="text-align: justify;">{{e.description}}</div>
                                 <span class="mx-2 badge p-2 mb-2" v-for="s in e.skills" :key="s">{{s}}</span>
                             </div>
                         </li>
