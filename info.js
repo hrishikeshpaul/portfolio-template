@@ -150,6 +150,39 @@ let info = {
             visit: 'https://github.com/hrishikeshpaul/clumpr',
             description: 'Clumpr is an online social event planning assistant that - using information about similar events happening in similar locations around the same time, friends who frequently attend the same events, and mutual friends - helps users to collaborate, combine, and attend events together, effectively "clumping" people and activities in a way that makes intuitive sense.'
         }
+    ],
+    recommendations: [
+        {
+            title: 'In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, rask oriented approach, he was able to complete his assignment ahead of time.',
+            author: 'Ushanas Shastri',
+            position: 'CTO',
+            company: 'Viteos Capital Market Services',
+            location: 'Mumbai'
+        },
+        {
+            title: 'I feel his budding leadership abilities will become even more effective in a diverse and challenging environment.',
+            author: 'Anil Dukkipatty',
+            position: 'CTO',
+            company: 'Elemential Labs',
+            location: 'Mumbai'
+        },
+        {
+            title: 'He has gained great knowledge and experience of SDE, and has learned ot develop the application keeping in mind the client\'s perpective and also making it creative.',
+            author: 'Chintan Shah',
+            position: 'Director',
+            company: 'Hridayam Soft Solution',
+            location: 'Mumbai'
+        },
+        {
+            title: 'During the course of his employment we have found him to be a self-started who was motivated, duty bound and a highly commited team player.',
+            author: 'Mrinal Pai',
+            position: 'Co-Founder & Director',
+            company: 'Skylark Drones',
+            location: 'Bangalore'
+        },
+
+
+
     ]
 }
 
