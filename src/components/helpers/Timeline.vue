@@ -90,7 +90,7 @@ ul.timeline > li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 2px solid #669DB3FF;
+    border: 2px solid rgb(212, 149, 97);;
     left: 20px;
     width: 20px;
     height: 20px;

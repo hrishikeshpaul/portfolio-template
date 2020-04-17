@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div :id="'carouselExampleControls' + name " class="carousel slide rborder" data-ride="carousel" >
+        <div :id="'carouselExampleControls' + name " class="carousel slide rborder" data-ride="carousel" data-interval="false">
             <div class="carousel-inner">
                 <div class="carousel-item" v-for="(image, idx) in images" :key="image" :class="{ active: idx==0 }" style="height: 180px;">
                     <img class="d-block img-fluid w-100" :src="image" :alt="image" style="max-width: 100%; max-height: 100%;  object-fit: cover;">
