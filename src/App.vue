@@ -7,6 +7,8 @@
       <Home />
       <About />
       <Skills />
+      <Portfolio />
+      <div style="height: 20vh"></div>
     </div>
   </div>
 </template>
@@ -16,6 +18,7 @@ import Navbar from './components/Navbar.vue'
 import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
+import Portfolio from './components/Portfolio'
 
 export default {
   name: 'App',
@@ -23,7 +26,8 @@ export default {
     Navbar,
     Home,
     About,
-    Skills
+    Skills,
+    Portfolio
   }
 }
 </script>
