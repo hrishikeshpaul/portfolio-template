@@ -12,6 +12,7 @@
                                 <div class="px-2 date">{{e.date}}</div>
                                 <div class="px-2 pb-2 pt-2" style="text-align: justify;">{{e.description}}</div>
                                 <span class="mx-2 badge p-2 mb-2" v-for="s in e.skills" :key="s">{{s}}</span>
+                                <p class='m-2'> </p>
                             </div>
                         </li>
                     </ul>
