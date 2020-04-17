@@ -8,7 +8,7 @@
                     <span>"{{d.title}}"</span>
                 </div>
                 <div class="title3 float-right py-2 pl-5">
-                    <span>– {{d.author}}, {{d.position}}, {{d.company}}, {{d.location}}</span>
+                    <span> – {{d.author}}, {{d.position}}, {{d.company}}, {{d.location}}</span>
                 </div>
             </div>
         </div>

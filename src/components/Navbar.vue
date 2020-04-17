@@ -22,7 +22,7 @@
             </li>
             <li class="nav-item mx-2">
               
-              <a class="nav-link" href="#">contact</a>
+              <a class="nav-link" href="/contact" @click.prevent="$emit('scroll', 'contact')">contact</a>
             </li>
           </ul>
         </div>

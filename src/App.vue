@@ -9,6 +9,7 @@
       <Skills id="skills" />
       <Portfolio id="portfolio" />
       <Recommendation />
+      <Contact id="contact"/>
     </div>
   </div>
 </template>
@@ -20,6 +21,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Recommendation from './components/Recommendation'
+import Contact from './components/Contact'
 
 export default {
   name: 'App',
@@ -29,7 +31,8 @@ export default {
     About,
     Skills,
     Portfolio,
-    Recommendation
+    Recommendation,
+    Contact
   },
   methods: {
     scrollTo(ele) {
