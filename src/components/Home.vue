@@ -70,10 +70,10 @@ img {
     img {
         object-fit: cover;
         border-radius: 50%;
-        height: 150px;
-        width: 150px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         border: 2px solid rgb(205, 205, 205);
     }
 }
