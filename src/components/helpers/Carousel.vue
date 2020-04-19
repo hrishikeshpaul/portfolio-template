@@ -1,24 +1,8 @@
 <template>
     <div>
-        <!-- <div :id="'carouselExampleControls' + name " class="carousel slide rborder" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item imgdiv" v-for="(image, idx) in images" :key="image" :class="{ active: idx==0 }" >
-                    <img class="d-block img-fluid w-100" :src="image" :alt="image" style="max-width: 100%; max-height: 100%;  object-fit: cover;">
-                </div>    
-            </div>
-            <a class="carousel-control-prev" :href="'#carouselExampleControls' + name" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" :href="'#carouselExampleControls' + name" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div> -->
-
         <div class="carousel">
             <div class="slides">
-                <img :src="image"  v-for="(image, idx) in images" :key="image" alt="slide image" class="slide">
+                <img :src="image"  v-for="image in images" :key="image" alt="slide image" class="slide">
             </div>
             <div class="controls">
                 <div class="control prev-slide">&#9668;</div>
@@ -131,6 +115,7 @@ export default {
 }
 
 img {
+    width: 50%;
     max-width: 90%; max-height: 90%;  object-fit: cover;
 }
 .carousel .controls .control {
