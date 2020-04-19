@@ -29,8 +29,6 @@ import info from '../../info'
 
 export default {
     name: "Home",
-    components: {
-    },
     data () {
         return {
             picture: info.flat_picture,
@@ -62,6 +60,7 @@ export default {
 }
 
 img {
+    max-width: 250px;
     transform: rotateY(180deg);
     
 }
