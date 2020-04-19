@@ -2,13 +2,22 @@
     <div class="bg-light py-4">
         <div class="container">
             <p class="title pgray text-center">contact.</p>
-                <hr width="50%" />
-                <input type="text" name="user_name" v-model="name">
-                <label>Email </label>
-                <input type="email" name="user_email" v-model="email">
-                <label>Message</label>
-                <textarea name="message" v-model="text"></textarea>
-                <button   @click.prevent="sendEmail">Send</button>
+            <hr width="50%" />
+
+            <div>
+                <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput"/>
+            </div>
+
+            <div>
+                <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput"/>
+            </div>
+
+            <div>
+                <textarea name="message" v-model="text" placeholder="message" class="pinput"></textarea>
+            </div>
+
+                
+            <button @click.prevent="sendEmail">Send</button>
         </div>
     </div>
 </template>
@@ -48,4 +57,37 @@ export default {
     font-size: 30px;
     font-weight: 500;
 }
+.title1 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.title3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.btn {
+    border-color: #669DB3FF;
+    color: #669DB3FF
+}
+
+.btn:hover {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
+    color: white;
+}
+
+.btn:focus {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
+    color: white;
+}
+
+
 </style>
