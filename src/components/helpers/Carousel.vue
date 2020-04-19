@@ -46,7 +46,7 @@ export default {
         }
     },
     mounted() {
-        const delay = 3000; //ms
+        const delay = 2000; //ms
 
         const slides = document.querySelector(".slides");
         const slidesCount = slides.childElementCount;
@@ -56,7 +56,7 @@ export default {
 
         function changeSlide(next = true) {
         if (next) {
-            current += current > maxLeft ? -100 : current * -1;
+            current += current > maxLeft ? -100 : current * - 1;
         } else {
             current = current < 0 ? current + 100 : maxLeft;
         }
@@ -72,13 +72,13 @@ export default {
 
         // Controls
         document.querySelector(".next-slide").addEventListener("click", function() {
-        changeSlide();
-        restart();
+            changeSlide();
+            restart();
         });
 
         document.querySelector(".prev-slide").addEventListener("click", function() {
-        changeSlide(false);
-        restart();
+            changeSlide(false);
+            restart();
         });
     }
 }
@@ -131,9 +131,7 @@ export default {
 }
 
 img {
-    /* width: 20%; */
-    /* height: 20%; */
-    max-width: 100%; max-height: 100%;  object-fit: cover;
+    max-width: 90%; max-height: 90%;  object-fit: cover;
 }
 .carousel .controls .control {
   margin: 0 5px;
@@ -162,7 +160,7 @@ img {
 }
 .carousel .slides .slide {
   min-width: 100%;
-  min-height: 250px;
+  min-height: 150px;
   height: auto;
 }
 

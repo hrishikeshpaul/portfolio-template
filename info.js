@@ -99,6 +99,21 @@ let info = {
     ],
     portfolio: [
         {
+            name: 'Sheet Recognizer',
+            pictures: [
+                require('./src/assets/portfolio/msr/one.png'),
+                require('./src/assets/portfolio/msr/two.png'),
+                require('./src/assets/portfolio/msr/three.png'),
+                require('./src/assets/portfolio/msr/four.png'),
+            ],
+            technologies: ['Computer Vision', 'OpenCV', 'AI', 'Flask', 'Sockets'],
+            category: 'Algorithm',
+            date: 'Jan, 2020 - Mar, 2020',
+            github: 'https://github.com/hrishikeshpaul/music-sheet-recognizer-backend',
+            visit: 'https://github.com/hrishikeshpaul/music-sheet-recognizer-backend',
+            description: 'Music Sheet Recognizer (MSR) highlights basic Image Processing and Recognition. Like Optical Character Recognition, this tool is used to detect music notes and rests. It makes use of basic Computer Vision techniques such as Convolution, Edge Detections, Hough Transforms and Template Matching to detect notes and rests on a music sheet. '
+        },
+        {
             name: 'NoQ Job Portal',
             pictures: [
                 require('./src/assets/portfolio/noq/logo.png'),
@@ -110,9 +125,22 @@ let info = {
             technologies: ['Node', 'Vue', 'Express', 'MongoDB', 'Heroku'],
             category: 'Website',
             date: 'Sep, 2019 - Dec  , 2019',
-            github: '',
+            github: 'https://github.com/hrishikeshpaul/noq',
             visit: 'https://noq-client.herokuapp.com/',
             description: 'No Q, is a revolutionary tool which allows for both employers and students to skip the hassle seen in modern day career fairs. For the students, there is an intuitive profile builder where you can add things like education, skills, certifications, honors, and experiences. No Q is not only good for students, but employers as well! A common problem at modern career fairs is the number of unqualified candidates who waste their time when they could be chatting with someone else. With No Q, only the students who meet the positions’ criteria will be able to apply, and from there the recruiter can invite them to talk in more detail at the career fair through our intuitive messaging system.'
+        },
+        {
+            name: 'POST',
+            pictures: [
+                require('./src/assets/portfolio/post/one.png'),
+                require('./src/assets/portfolio/post/two.png'),
+            ],
+            technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
+            category: 'Algorithm',
+            github: 'https://github.com/hrishikeshpaul/pos-tagger',
+            date: 'Oct, 2019 - Nov, 2019',
+            visit: 'https://post-client.herokuapp.com/',
+            description: 'Post is a simple algorithm that was developed to tagging a word corresponding to its part of speech. The algorithm makes of a probabilisitic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling.'
         },
         {
             name: 'Suicide Analyzer',
@@ -123,22 +151,25 @@ let info = {
             technologies: ['Node', 'Angular', 'Express', 'Leaflet', 'Pandas'],
             category: 'Website',
             date: 'Oct, 2018 - Nov, 2018',
-            github: '',
+            github: 'https://github.com/hrishikeshpaul/whodata',
             visit: 'https://skylarktiral.herokuapp.com/',
             description: 'This is a web application, uses a map to demonstrate the number suicides committed around the globe, according to a dataset provided by the WHO. The application consists of a Leaflet map that colors every nation, based on the number of suicides that have been committed in that country, for that year. It provides us with the capability to select the data as well as the continent.'
         },
         {
-            name: 'POST',
+            name: 'Sentiment Analyzer',
             pictures: [
-                require('./src/assets/portfolio/post/one.png'),
-                require('./src/assets/portfolio/post/two.png'),
+
+                require('./src/assets/portfolio/smit/one.png'),
+                require('./src/assets/portfolio/smit/two.png'),
+                require('./src/assets/portfolio/smit/three.png'),
+                require('./src/assets/portfolio/smit/four.png'),
             ],
-            technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
-            category: 'Web App',
-            github: '',
-            date: 'Oct, 2019 - Nov, 2019',
-            visit: 'https://post-client.herokuapp.com/',
-            description: 'Post is a simple algorithm that was developed to tagging a word corresponding to its part of speech. The algorithm makes of a probabilisitic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling.'
+            technologies: ['LSTM', 'Keras', 'Angular', 'Tweepy', 'Heroku', 'Python'],
+            category: 'Alogrithm',
+            date: 'Feb, 2018 - Apr  , 2018',
+            github: 'https://github.com/hrishikeshpaul/sih',
+            visit: 'https://angel.co/projects/1009777-sentiment-analysis',
+            description: 'Developing this for the final round of Smart India Hackathon 2018, the web application is a platform for showcasing the sentiment of the tweets of the people in the Telangana region in India on policy satisfaction, services and problem definitions. The minimal UI design consists of different bins, that have their respective tweets, all scraped from twitter. There is also a simple graphical representation denoting the sentiment of the tweets.'
         },
         {
             name: 'Clumpr',
@@ -149,10 +180,27 @@ let info = {
             ],
             technologies: ['Node', 'Angular', 'Express', 'MySQL', 'Facebook API'],
             category: 'Web App',
-            github: '',
+            github: 'https://github.com/hrishikeshpaul/clumpr',
             date: 'Sep, 2017 - Nov, 2017',
             visit: 'https://github.com/hrishikeshpaul/clumpr',
             description: 'Clumpr is an online social event planning assistant that - using information about similar events happening in similar locations around the same time, friends who frequently attend the same events, and mutual friends - helps users to collaborate, combine, and attend events together, effectively "clumping" people and activities in a way that makes intuitive sense.'
+        },
+        {
+            name: 'Nutricare',
+            pictures: [
+                require('./src/assets/portfolio/nc/one.png'),
+                require('./src/assets/portfolio/nc/two.png'),
+                require('./src/assets/portfolio/nc/three.png'),
+                require('./src/assets/portfolio/nc/four.png'),
+                require('./src/assets/portfolio/nc/five.png'),
+                require('./src/assets/portfolio/nc/six.png'),
+            ],
+            technologies: ['Node', 'Angular', 'Express', 'MongDB', 'Medical'],
+            category: 'Website',
+            github: 'https://github.com/hrishikeshpaul/clumpr',
+            date: 'May, 2017 - Aug, 2017',
+            visit: 'https://angel.co/projects/576300-nutricare',
+            description: 'Nutricare is a basic health website for users(patients) to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects (patient) for a particular problem statement. Typically, a researcher will enter food item consumed by subjects over a period of time (Ex - 24hrs, or 1 week, or 1 month etc).'
         }
     ],
     recommendations: [

@@ -4,7 +4,6 @@
             <div style="height: 180px;">
                 <img class="card-img-top" :src="portfolio.pictures[0]" alt="Card image cap">
             </div>
-            <!-- <Carousel :images="portfolio.pictures" :name="portfolio.name" class="card-img-top"/> -->
             <div class="card-body pborder-top">
                 <h5 class="title2">{{portfolio.name}}</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">{{portfolio.category}}</h6> -->
