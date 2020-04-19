@@ -10,7 +10,7 @@
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
                     <span class="home-title pgray">hello there!</span>
                     <div>
-                        <p>{{description}}</p>
+                        <p v-html="description"></p>
                     </div>
                     <div class='text-center pb-4'>
                         <button class="btn btn-outline-secondary mx-2 " @click="open('linkedin')"><i class="fab fa-linkedin"></i></button>

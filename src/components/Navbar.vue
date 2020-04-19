@@ -49,6 +49,10 @@ export default {
   font-weight: 400;
 }
 
+nav {
+  border-bottom: 1px solid #e8e8e8;
+}
+
 button {
   border:none;
   outline: none;
