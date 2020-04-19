@@ -62,7 +62,7 @@ export default {
       showMore() {
         if (this.number != this.all_info.length) {
           this.number += 3
-          
+
           window.scrollBy({
             top: document.getElementsByClassName('pcard')[0].clientHeight,
             behavior: 'smooth'
@@ -127,19 +127,19 @@ export default {
 }
 
 .btn {
-    border-color: #669DB3FF;
-    color: #669DB3FF
+    border-color: rgb(212, 149, 97);
+    color: rgb(212, 149, 97);
 }
 
 .btn:hover {
-    background-color: #669DB3FF;
-    border-color: #669DB3FF;
+    background-color:rgb(212, 149, 97);
+    border-color: rgb(212, 149, 97);
     color: white;
 }
 
 .btn:focus {
-    background-color: #669DB3FF;
-    border-color: #669DB3FF;
+    background-color: rgb(212, 149, 97);
+    border-color:rgb(212, 149, 97);
     color: white;
 }
 
