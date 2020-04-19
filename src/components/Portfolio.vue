@@ -9,6 +9,9 @@
             <Card :portfolio="portfolio" @show="showModalFn"/>
           </div>
         </div>
+        <div class="text-center py-3">
+          <button class="btn" @click.prevent="showMore">{{showBtn}}</button>
+        </div>
       </div>
       <transition name="modal">
         <Modal :showModal="showModal" @close="showModal = false" v-if="showModal" :portfolio="modal_info" />
@@ -29,15 +32,60 @@ export default {
     },
     data () {
         return {
-           portfolio_info: info.portfolio,
-           showModal: false,
-           modal_info: {}
+          all_info: info.portfolio,
+          portfolio_info: [],
+          showModal: false,
+          modal_info: {},
+          number: 6,
+          showBtn: 'show more',
+          shower: 0
         }
+    },
+    created() {
+      for(var i = 0; i < this.number; i++) {
+        this.portfolio_info.push(this.all_info[i])
+      }
+    },
+    watch: {
+      number() {
+        this.portfolio_info = []
+        for(var i = 0; i < this.number; i++) {
+          this.portfolio_info.push(this.all_info[i])
+        }
+      }
     },
     methods: {
       showModalFn(portfolio) {
         this.modal_info = portfolio
         this.showModal = true
+      },
+      showMore() {
+        if (this.number != this.all_info.length) {
+          this.number += 3
+          
+          window.scrollBy({
+            top: document.getElementsByClassName('pcard')[0].clientHeight,
+            behavior: 'smooth'
+          })
+
+          if (this.number > this.all_info.length)
+            this.number = this.all_info.length
+        }
+
+        if (this.number == this.all_info.length && this.shower == 0) {
+          this.shower = 1
+          this.showBtn = 'show less'
+        }
+
+        else if (this.number == this.all_info.length && this.shower == 1) {
+          var elementPosition = document.getElementById('portfolio').offsetTop;
+          window.scrollTo({top: elementPosition+5, behavior: 'smooth'});
+          this.shower = 0
+          this.number = 6
+          this.showBtn = 'show more'
+        }
+
+
       }
     }
    
@@ -76,6 +124,23 @@ export default {
 .modal-leave-active .modal-container {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.btn {
+    border-color: #669DB3FF;
+    color: #669DB3FF
+}
+
+.btn:hover {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
+    color: white;
+}
+
+.btn:focus {
+    background-color: #669DB3FF;
+    border-color: #669DB3FF;
+    color: white;
 }
 
 </style>
