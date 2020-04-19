@@ -18,12 +18,11 @@
 <script>
 import Timeline from './helpers/Timeline'
 import info from '../../info'
-import Skills from './Skills'
+
 export default {
     name: 'About',
     components: {
         Timeline,
-        Skills
     },
     data() { 
         return {

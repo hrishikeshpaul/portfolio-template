@@ -19,7 +19,7 @@ export default {
         }
     },
     watch: {
-        showSnackbar(nv, ov) {
+        showSnackbar(nv) {
             if (nv) {
                 setTimeout(() => { 
                     this.$emit('close' , false)
