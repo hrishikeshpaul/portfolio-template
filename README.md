@@ -41,6 +41,8 @@ npm run build
 
 Edit the `info.js` file, and input your own data. All the images should go in the `src/assets` folder. 
 
+To change the title (the one that appears on the tabs), navigate to `public/index.html` and change the title there.
+
 ## Deployment
 
 To get this deployed as a github page, follow the steps below,
