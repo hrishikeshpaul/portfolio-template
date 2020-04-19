@@ -17,7 +17,7 @@
                     <textarea name="message" v-model="text" placeholder="message" class="pinput pgray" rows="4"></textarea>
                 </div>
 
-                <button @click.prevent="sendEmail" class="my-1 btn w-50">Send</button>
+                <button @click.prevent="sendEmail" class="mt-1 btn w-50 mb-3">Send</button>
             </div>
 
             <Snackbar :showSnackbar="showSnackbar" @close="closeSnackbar" :snackbarMessage="snackbarMessage" :snackbarColor="snackbarColor" />

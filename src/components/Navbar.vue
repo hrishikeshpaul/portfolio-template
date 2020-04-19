@@ -12,17 +12,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link" href="/about" @click.prevent="$emit('scroll', 'about')">about</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'about')">about</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="/skills" @click.prevent="$emit('scroll', 'skills')">skills</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'skills')">skills</a>
             </li>
             <li class="nav-item mx-2 ">
-              <a class="nav-link" href="/portfolio" @click.prevent="$emit('scroll', 'portfolio')">portfolio</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'portfolio')">portfolio</a>
             </li>
             <li class="nav-item mx-2">
               
-              <a class="nav-link" href="/contact" @click.prevent="$emit('scroll', 'contact')">contact</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'contact')">contact</a>
             </li>
           </ul>
         </div>
@@ -48,4 +48,5 @@ export default {
 .nav-link {
   font-weight: 400;
 }
+
 </style>
