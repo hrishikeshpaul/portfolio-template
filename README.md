@@ -2,6 +2,11 @@
 
 This is a simple personal website template for people who want a simple personal website. This template is currently filled with my data, but one can replate it with theirs without much hastle. Furthermore, this is mobile compatible. Below I have mentioned the steps to get this on your system, and deploy it.
 
+![](assets/one.png)
+![](assets/two.png)
+![](assets/three.png)
+![](assets/four.png)
+
 
 ## Project Setup
 
@@ -50,4 +55,8 @@ To get this deployed as a github page, follow the steps below,
 
 5. Click on the **source** dropdown, and select **master**.
 
-6. Wait for a while, and then nagivate to `<github_username>.github.io` on your browser, and you should see your webisite up and running
+6. Wait for a while, and then nagivate to `<github_username>.github.io` on your browser, and you should see your webisite up and running.
+
+# Notes
+
+Please feel free to post any issue if found, or mail me at hrpaul@iu.edu.
