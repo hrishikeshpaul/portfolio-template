@@ -1,8 +1,10 @@
 <template>
     <div class="my-3 mx-3" >
         <div class="card pcard" >
-            <!-- <img class="card-img-top" :src="portfolio.pictures[0]" alt="Card image cap"> -->
-            <Carousel :images="portfolio.pictures" :name="portfolio.name" class="card-img-top"/>
+            <div style="height: 180px;">
+                <img class="card-img-top" :src="portfolio.pictures[0]" alt="Card image cap">
+            </div>
+            <!-- <Carousel :images="portfolio.pictures" :name="portfolio.name" class="card-img-top"/> -->
             <div class="card-body pborder-top">
                 <h5 class="title2">{{portfolio.name}}</h5>
                 <!-- <h6 class="card-subtitle mb-2 text-muted">{{portfolio.category}}</h6> -->
@@ -10,24 +12,23 @@
                     <div class="pb-1 bheight">
                         <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
                     </div>
-                <p class="title3 m-0 pb-2 pheight pt-1">{{portfolio.description.length > 100 ? portfolio.description.substring(0, 105) + '...' : portfolio.description}}</p>
+                <p class="title3 m-0 pb-2 pheight pt-1" v-html="portfolio.description.length > 100 ? portfolio.description.substring(0, 105) + '...' : portfolio.description">{{}}</p>
                 </div>
                 <div class='text-center mt-2'>
-                    <a href="#" class="btn-sm btn btn-outline-secondary no-outline">Read more</a>
-                    <a href="#" class="btn-sm btn btn-outline-secondary no-outline ml-4" v-if="portfolio.visit" @click='open(portfolio.visit)'>Visit Website</a>
+                    <a href="" class="btn-sm btn btn-outline-secondary no-outline" @click.prevent="showModal">read more</a>
+                    <a href="#" class="btn-sm btn btn-outline-secondary no-outline ml-4" v-if="portfolio.visit" @click.prevent='open(portfolio.visit)'>visit website</a>
                 </div>
             </div>
-            </div>
-
+        </div>
     </div>
 </template>
 
 <script>
-import Carousel from './Carousel'
+
 export default {
     name: 'Card',
     components: {
-        Carousel
+        
     },
     props: {
         portfolio: {
@@ -42,17 +43,23 @@ export default {
     methods: {
         open(url) {
             window.open(url, '_blank')
+        },
+        showModal() {
+            this.$emit('show', this.portfolio)
         }
     }
 }
 </script>
 
 <style scoped>
+
 img {
-    /* max-height: 100px; */
-    /* max-width: 300px; */
     border-radius: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    max-width: 100%; max-height: 100%;  object-fit: cover;
 }
+
 
 .img-div img{
     /* object-fit: cover;
@@ -65,8 +72,7 @@ img {
 }
 
 .bheight {
-    height: 60px;
-    max-height: 120px;
+    height: 65px;
     overflow: auto;
 }
 
@@ -161,4 +167,6 @@ div.img-div {
     border-color: #669DB3FF;
     color: white;
 }
+
+
 </style>

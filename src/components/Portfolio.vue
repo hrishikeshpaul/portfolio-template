@@ -6,26 +6,40 @@
             <br />
         <div class="row">
           <div class="col-xl-4 col-bg-4 col-md-4 col-sm-12" v-for="portfolio in portfolio_info" :key="portfolio.name">
-            <Card :portfolio="portfolio" />
+            <Card :portfolio="portfolio" @show="showModalFn"/>
           </div>
         </div>
       </div>
+      <transition name="modal">
+        <Modal :showModal="showModal" @close="showModal = false" v-if="showModal" :portfolio="modal_info" />
+      </transition>
     </div>
 </template>
 
 <script>
 import Card from './helpers/Card'
+import Modal from './helpers/Modal'
 import info from '../../info'
+
 export default {
     name: "Portfolio" ,
     components: {
-      Card
+      Card,
+      Modal
     },
     data () {
         return {
-           portfolio_info: info.portfolio
+           portfolio_info: info.portfolio,
+           showModal: false,
+           modal_info: {}
         }
     },
+    methods: {
+      showModalFn(portfolio) {
+        this.modal_info = portfolio
+        this.showModal = true
+      }
+    }
    
 }
 </script>
@@ -49,4 +63,19 @@ export default {
     font-size: 16px;
     font-weight: 400;
 }
+
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 </style>

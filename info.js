@@ -109,7 +109,8 @@ let info = {
             ],
             technologies: ['Node', 'Vue', 'Express', 'MongoDB', 'Heroku'],
             category: 'Website',
-            date: 'Sep, 2019 - Dev, 2019',
+            date: 'Sep, 2019 - Dec  , 2019',
+            github: '',
             visit: 'https://noq-client.herokuapp.com/',
             description: 'No Q, is a revolutionary tool which allows for both employers and students to skip the hassle seen in modern day career fairs. For the students, there is an intuitive profile builder where you can add things like education, skills, certifications, honors, and experiences. No Q is not only good for students, but employers as well! A common problem at modern career fairs is the number of unqualified candidates who waste their time when they could be chatting with someone else. With No Q, only the students who meet the positions’ criteria will be able to apply, and from there the recruiter can invite them to talk in more detail at the career fair through our intuitive messaging system.'
         },
@@ -122,6 +123,7 @@ let info = {
             technologies: ['Node', 'Angular', 'Express', 'Leaflet', 'Pandas'],
             category: 'Website',
             date: 'Oct, 2018 - Nov, 2018',
+            github: '',
             visit: 'https://skylarktiral.herokuapp.com/',
             description: 'This is a web application, uses a map to demonstrate the number suicides committed around the globe, according to a dataset provided by the WHO. The application consists of a Leaflet map that colors every nation, based on the number of suicides that have been committed in that country, for that year. It provides us with the capability to select the data as well as the continent.'
         },
@@ -133,6 +135,7 @@ let info = {
             ],
             technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
             category: 'Web App',
+            github: '',
             date: 'Oct, 2019 - Nov, 2019',
             visit: 'https://post-client.herokuapp.com/',
             description: 'Post is a simple algorithm that was developed to tagging a word corresponding to its part of speech. The algorithm makes of a probabilisitic approach along with some randomness, together which forms the basis of an algorithm called Gibbs Sampling.'
@@ -146,6 +149,7 @@ let info = {
             ],
             technologies: ['Node', 'Angular', 'Express', 'MySQL', 'Facebook API'],
             category: 'Web App',
+            github: '',
             date: 'Sep, 2017 - Nov, 2017',
             visit: 'https://github.com/hrishikeshpaul/clumpr',
             description: 'Clumpr is an online social event planning assistant that - using information about similar events happening in similar locations around the same time, friends who frequently attend the same events, and mutual friends - helps users to collaborate, combine, and attend events together, effectively "clumping" people and activities in a way that makes intuitive sense.'
