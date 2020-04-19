@@ -153,7 +153,7 @@ let info = {
     ],
     recommendations: [
         {
-            title: 'In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, rask oriented approach, he was able to complete his assignment ahead of time.',
+            title: 'In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, task oriented approach, he was able to complete his assignment ahead of time.',
             author: 'Ushanas Shastri',
             position: 'CTO',
             company: 'Viteos Capital Market Services',

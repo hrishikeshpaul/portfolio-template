@@ -3,21 +3,25 @@
         <div class="container">
             <p class="title pgray text-center">contact.</p>
             <hr width="50%" />
+            <br />
+            <div class="text-center">
+                <div class="mb-3">
+                    <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput pgray"/>
+                </div>
 
-            <div>
-                <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput"/>
+                <div class="my-3">
+                    <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput pgray"/>
+                </div>
+
+                <div class="my-3">
+                    <textarea name="message" v-model="text" placeholder="message" class="pinput pgray" rows="4"></textarea>
+                </div>
+
+                <button @click.prevent="sendEmail" class="my-1 btn w-50">Send</button>
             </div>
 
-            <div>
-                <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput"/>
-            </div>
-
-            <div>
-                <textarea name="message" v-model="text" placeholder="message" class="pinput"></textarea>
-            </div>
-
-                
-            <button @click.prevent="sendEmail">Send</button>
+            <Snackbar :showSnackbar="showSnackbar" @close="closeSnackbar" :snackbarMessage="snackbarMessage" :snackbarColor="snackbarColor" />
+            
         </div>
     </div>
 </template>
@@ -25,28 +29,61 @@
 <script>
 import emailjs from 'emailjs-com';
 
+import Snackbar from './helpers/Snackbar'
+
 export default {
     name: "Contact",
+    components: {
+        Snackbar
+    },
     data () {
         return {
             email: '',
             name: '',
-            text: ''
+            text: '',
+            showSnackbar: false,
+            snackbarMessage: '',
+            snackbarColor: ''
         }
     },
     methods: {
-        sendEmail() {
-            
-            var obj = {
-                user_email: this.email, from_name: this.name,  message_html: this.text, to_name: 'Hrishikesh Paul'
+        closeSnackbar(val) {
+            if (!val) {
+                setTimeout(() => { 
+                    // this.showSnackbar = false
+                    this.showSnackbar = val
+                    }, 1000);
             }
+            
+        },
+        sendEmail() {
+            if (!this.email || !this.name || !this.text) {
+                this.showSnackbar = true
+                this.snackbarMessage = 'Please all the fields'
+                this.snackbarColor = 'rgb(212, 149, 97)'
+            } else {
+                var obj = {
+                    user_email: this.email, from_name: this.name,  message_html: this.text, to_name: 'Hrishikesh Paul'
+                }
 
-            // emailjs.send('gmail', 'template_zHretJ0d', obj, 'user_8g0rh3d6Qj1QZBEU8USls')
-            //     .then((result) => {
-            //         console.log('SUCCESS!', result.status, result.text);
-            //     }, (error) => {
-            //         console.log('FAILED...', error);
-            //     });
+
+                emailjs.send('gmail', 'template_zHretJ0d', obj, 'user_8g0rh3d6Qj1QZBEU8USls')
+                    .then((result) => {
+                        this.showSnackbar = true
+                        this.snackbarMessage = 'Thanks! Message recieved.'
+                        this.snackbarColor = '#1aa260'
+
+                        this.email = ''
+                        this.text = ''
+                        this.name = ''
+                        console.log('SUCCESS!', result.status, result.text);
+                    }, (error) => {
+                        this.showSnackbar = true
+                        this.snackbarMessage = 'Oops! Something went wrong.'
+                        this.snackbarColor = 'rgb(212, 149, 97)'
+                        console.log('FAILED...', error);
+                    });
+            }
         }
     }
 }
@@ -70,6 +107,15 @@ export default {
 .title3 {
     font-size: 16px;
     font-weight: 400;
+}
+
+.pinput {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    width: 50%;
 }
 
 .btn {
