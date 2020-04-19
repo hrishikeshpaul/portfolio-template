@@ -49,4 +49,13 @@ export default {
   font-weight: 400;
 }
 
+button {
+  border:none;
+  outline: none;
+}
+
+button:hover {
+  border:none;
+  outline: none;
+}
 </style>
