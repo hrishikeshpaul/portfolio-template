@@ -13,8 +13,8 @@
                 <p class="title3 m-0 pb-2 pheight pt-1" v-html="portfolio.description.length > 100 ? portfolio.description.substring(0, 105) + '...' : portfolio.description">{{}}</p>
                 </div>
                 <div class='text-center mt-2'>
-                    <a href="" class="btn-sm btn btn-outline-secondary no-outline" @click.prevent="showModal">read more</a>
-                    <a href="#" class="btn-sm btn btn-outline-secondary no-outline ml-4" v-if="portfolio.visit" @click.prevent='open(portfolio.visit)'>visit website</a>
+                    <button href="" class="btn-sm btn btn-outline-secondary no-outline" @click.prevent="showModal">read more</button>
+                    <button href="#" class="btn-sm btn btn-outline-secondary no-outline ml-4" v-if="portfolio.visit" @click.prevent='open(portfolio.visit)'>visit website</button>
                 </div>
             </div>
         </div>
@@ -25,17 +25,9 @@
 
 export default {
     name: 'Card',
-    components: {
-        
-    },
     props: {
         portfolio: {
             type: Object
-        }
-    },
-    data () {
-        return {
-        
         }
     },
     methods: {
@@ -50,6 +42,7 @@ export default {
 </script>
 
 <style scoped>
+
 
 img {
     border-radius: 10px;

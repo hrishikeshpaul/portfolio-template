@@ -99,7 +99,7 @@ a:hover {
   transition: all .3s ease;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 580px){
     .modal-container {
         width: 90%;
 

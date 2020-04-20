@@ -68,7 +68,7 @@ img {
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 580px) {
     img {
         object-fit: cover;
         border-radius: 50%;

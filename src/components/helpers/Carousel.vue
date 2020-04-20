@@ -72,7 +72,7 @@ export default {
     height: 350px;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 4580px){
     .imgdiv {
         height: 150px;
     }
@@ -86,7 +86,7 @@ export default {
   position: relative;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 580px){
     .carousel {
         height: 150px;
     }

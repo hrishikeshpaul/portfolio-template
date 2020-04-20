@@ -67,7 +67,7 @@ span {
     color: gray;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 580px){
   .pbelow {
     padding-bottom: 20px;
     text-align: center;
