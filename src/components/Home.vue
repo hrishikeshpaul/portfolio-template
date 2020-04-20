@@ -1,7 +1,5 @@
 <template>
     <div>
-        <div>
-        </div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
@@ -27,8 +25,13 @@
 <script>
 import info from '../../info'
 
+import Wave from './helpers/Wave'
+
 export default {
     name: "Home",
+    components: {
+        Wave
+    },
     data () {
         return {
             picture: info.flat_picture,
