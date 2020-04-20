@@ -21,9 +21,9 @@ export default {
     watch: {
         showSnackbar(nv) {
             if (nv) {
-                setTimeout(() => { 
-                    this.$emit('close' , false)
-                    }, 1900);
+              setTimeout(() => { 
+                this.$emit('close' , false)
+              }, 1900);
             }
         }
     }
@@ -35,7 +35,6 @@ export default {
   visibility: hidden;
   min-width: 250px;
   margin-left: -125px;
-  /* background-color: #333; */
   color: #fff;
   text-align: center;
   border-radius: 7px;

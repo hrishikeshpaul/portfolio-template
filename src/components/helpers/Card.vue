@@ -6,7 +6,6 @@
             </div>
             <div class="card-body pborder-top">
                 <h5 class="title2">{{portfolio.name}}</h5>
-                <!-- <h6 class="card-subtitle mb-2 text-muted">{{portfolio.category}}</h6> -->
                 <div >
                     <div class="pb-1 bheight">
                         <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>

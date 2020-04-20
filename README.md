@@ -41,7 +41,44 @@ npm run build
 
 Edit the `info.js` file, and input your own data. All the images should go in the `src/assets` folder. 
 
-To change the title (the one that appears on the tabs), navigate to `public/index.html` and change the title there.
+> To change the title (the one that appears on the tabs), navigate to `public/index.html` and change the title there.
+
+### Emailjs (Contact Form)
+
+The **contact** section of the template makes use of this API called [emailjs](https://www.emailjs.com/). It is a good service that provides 200 email free every month. You will need to configure your own emailjs account for the service to work.
+
+1. Head over to [emailjs](https://www.emailjs.com/) and create your account.
+2. Once logged in, select a service. In my case I selected **gmail**.
+3. Head over to **Email Templates** on the side and click on **Email Template Example**. Here, there are few changes to be made if you don't want to change the template's javascript code.
+    - Change the subject attribute to: `New message from {{from_name}}!`
+    - Change the body to, 
+    ```js
+    Hello {{to_name}},
+
+    You got a new message from {{from_name}}:
+
+    {{{message_html}}}
+
+    My contact is: {{user_email}}.
+    ```
+    You can configure this however you want, but the attributes in the `{{ }}` need to be those.
+4. Create a file called `config.js` in the root of the project. You'll notice that the `.gitignore` has the name of this file. This is where all the data that links your web app to emailjs will be stores.
+5. Create a object that looks like this,
+   ```js
+   let config = {
+        emailjs: {
+            serviceID: '<serviceID>',
+            templateID: '<templateID>',
+            userID: '<userID>'
+        }
+    }
+
+    export default config;
+   ```
+6. You need to get the above mentioned IDs from your emailjs account,
+   - **serviceID**: From `Email Services`
+   - **templateID**: From `Email Templates`
+   - **userID**: From `Account` > `API Keys`
 
 ## Deployment
 

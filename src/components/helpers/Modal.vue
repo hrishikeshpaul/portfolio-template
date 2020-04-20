@@ -6,8 +6,6 @@
                     <div class="">
                         <Carousel :images="portfolio.pictures" :name="portfolio.name"/>
                     </div>
-
-
                     <div class="modal-body my-0 pb-0 px-4">
                         <div class="title1">
                             <span><a href="#" @click.prevent="open(portfolio.visit)">{{portfolio.name}}</a></span>
@@ -16,8 +14,6 @@
                         <div class="pgray mb-2 date">
                             <span>{{portfolio.date}} • {{portfolio.category}}</span>
                         </div>
-
-    
                         <div class="pb-1 bheight">
                             <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
                         </div>
@@ -97,8 +93,6 @@ a:hover {
 .modal-container {
   width: 35%;
   margin: 0px auto;
-  /* border-radius: 10px;; */
-  /* padding: 20px 30px; */
   background-color: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
@@ -115,16 +109,6 @@ a:hover {
 .modal-body {
   margin: 20px 0;
 }
-
-
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
 
 .modal-enter {
   opacity: 0;

@@ -8,8 +8,7 @@
                 <div class="control prev-slide">&#9668;</div>
                 <div class="control next-slide">&#9658;</div>
             </div>
-            </div>
-
+        </div>
     </div>
 </template>
 
@@ -90,7 +89,6 @@ export default {
   border-radius: 3px;
   overflow: hidden;
   position: relative;
-  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); */
 }
 
 @media screen and (max-width: 400px){
@@ -148,6 +146,5 @@ img {
   min-height: 150px;
   height: auto;
 }
-
 
 </style>

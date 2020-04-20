@@ -27,6 +27,7 @@
 </template>
 
 <script>
+import config from '../../config'
 import emailjs from 'emailjs-com';
 
 import Snackbar from './helpers/Snackbar'
@@ -50,7 +51,6 @@ export default {
         closeSnackbar(val) {
             if (!val) {
                 setTimeout(() => { 
-                    // this.showSnackbar = false
                     this.showSnackbar = val
                     }, 1000);
             }
@@ -67,7 +67,7 @@ export default {
                 }
 
 
-                emailjs.send('gmail', 'template_zHretJ0d', obj, 'user_8g0rh3d6Qj1QZBEU8USls')
+                emailjs.send(config.emailjs.serviceID, config.emailjs.templateID, obj, config.emailjs.userID)
                     .then((result) => {
                         this.showSnackbar = true
                         this.snackbarMessage = 'Thanks! Message recieved.'
@@ -76,12 +76,10 @@ export default {
                         this.email = ''
                         this.text = ''
                         this.name = ''
-                        console.log('SUCCESS!', result.status, result.text);
                     }, (error) => {
                         this.showSnackbar = true
                         this.snackbarMessage = 'Oops! Something went wrong.'
                         this.snackbarColor = 'rgb(212, 149, 97)'
-                        console.log('FAILED...', error);
                     });
             }
         }
