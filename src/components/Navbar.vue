@@ -33,13 +33,11 @@
 
 <script>
 import Logo from './helpers/Logo'
+
 export default {
     name: "Navbar",
     components: {
       Logo
-    },
-    methods: {
-      
     }
 }
 </script>

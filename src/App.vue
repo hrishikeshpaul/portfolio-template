@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Navbar @scroll="scrollTo"/>
     <div class="parent">
       <Home />
@@ -52,7 +50,6 @@ export default {
 
 <style>
 #app {
-  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -70,7 +67,6 @@ export default {
   margin-top: 80px;
   padding-top: 40px;
   position: relative;
-  /* background-color: red; */
 }
 
 .pgray {

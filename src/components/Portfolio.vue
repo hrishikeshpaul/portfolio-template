@@ -2,8 +2,8 @@
     <div class="py-4 bg-light">
       <div class="container">
         <p class="title pgray text-center">portfolio.</p>
-            <hr width="50%" />
-            <br />
+        <hr width="50%" />
+        <br />
         <div class="row">
           <div class="col-xl-4 col-bg-4 col-md-4 col-sm-12" v-for="portfolio in portfolio_info" :key="portfolio.name">
             <Card :portfolio="portfolio" @show="showModalFn"/>

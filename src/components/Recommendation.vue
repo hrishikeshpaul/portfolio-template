@@ -17,6 +17,7 @@
 
 <script>
 import info from '../../info'
+
 export default {
     name: 'Recommendation',
     data () {

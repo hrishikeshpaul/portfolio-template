@@ -13,13 +13,8 @@
 </template>
 
 <script>
-import { VueAgile } from 'vue-agile'
-
 export default {
     name: "Carousel",
-    components: {
-         agile: VueAgile 
-    },
     props: {
         images: {
             type: Array
@@ -38,19 +33,19 @@ export default {
         let current = 0;
 
         function changeSlide(next = true) {
-        if (next) {
-            current += current > maxLeft ? -100 : current * - 1;
-        } else {
-            current = current < 0 ? current + 100 : maxLeft;
-        }
+            if (next) {
+                current += current > maxLeft ? -100 : current * - 1;
+            } else {
+                current = current < 0 ? current + 100 : maxLeft;
+            }
 
-        slides.style.left = current + "%";
+            slides.style.left = current + "%";
         }
 
         let autoChange = setInterval(changeSlide, delay);
         const restart = function() {
-        clearInterval(autoChange);
-        autoChange = setInterval(changeSlide, delay);
+            clearInterval(autoChange);
+            autoChange = setInterval(changeSlide, delay);
         };
 
         // Controls

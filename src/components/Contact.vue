@@ -66,7 +66,6 @@ export default {
                     user_email: this.email, from_name: this.name,  message_html: this.text, to_name: 'Hrishikesh Paul'
                 }
 
-
                 emailjs.send(config.emailjs.serviceID, config.emailjs.templateID, obj, config.emailjs.userID)
                     .then((result) => {
                         this.showSnackbar = true

@@ -8,10 +8,8 @@
                 <div class="bg-div"><i :class="skill.icon"></i></div>
                 <div class="title2 pt-2">{{skill.title}}</div>
                 <hr width="50%"/>
-                <span class="title3">{{skill.info.join(', ')}}</span>
-                    
+                <span class="title3">{{skill.info.join(', ')}}</span> 
             </div>
-            
         </div>
     </div>
 </template>
