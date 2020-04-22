@@ -68,7 +68,7 @@ export default {
 }
 
 img {
-    max-width: 250px;
+    max-width: 260px;
     transform: rotateY(180deg);
     
 }

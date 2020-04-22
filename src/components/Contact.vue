@@ -141,7 +141,7 @@ export default {
 }
 
 .pgray-dark {
-    background-color: #393e41;
+    background-color: #3c4148 !important;
 }
 
 @media screen and (max-width: 1000px) {

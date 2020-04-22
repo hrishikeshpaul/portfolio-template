@@ -8,7 +8,7 @@
                 <h5 class="title2">{{portfolio.name}}</h5>
                 <div >
                     <div class="pb-1 bheight">
-                        <span class="badge mr-2 mb-2 text-dark" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
+                        <span class="badge mr-2 mb-2 " v-for="tech in portfolio.technologies" :key="tech" :class="{'bg-dark4': nightMode}">{{tech}}</span>
                     </div>
                 <p class="title3 m-0 pb-2 pheight pt-1" v-html="portfolio.description.length > 100 ? portfolio.description.substring(0, 105) + '...' : portfolio.description">{{}}</p>
                 </div>
@@ -147,13 +147,9 @@ div.img-div {
     background-color: rgb(211, 227, 233);
     transition: all 0.5s;
     font-weight: 500;
+    font-size: 13px;
 }
 
-.badge:hover { 
-    transition: all 0.5s;
-    box-shadow: 2px 2px 5px rgb(179, 179, 179);
-
-}
 
 .btn {
     border-color: #669DB3FF;
@@ -174,6 +170,10 @@ div.img-div {
 
 .bg-dark3 {
     background-color:rgb(82, 82, 82)
+}
+
+.bg-dark4 {
+    background-color: #494e55 !important;
 }
 
 </style>

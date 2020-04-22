@@ -15,7 +15,7 @@
                             <span>{{portfolio.date}} • {{portfolio.category}}</span>
                         </div>
                         <div class="pb-1 bheight">
-                            <span class="badge mr-2 mb-2 text-dark" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
+                            <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech" :class="{'bg-dark4': nightMode}">{{tech}}</span>
                         </div>
 
                         <div style="text-align: justify; overflow: auto; max-height: 350px;">
@@ -186,5 +186,9 @@ a:hover {
     background-color: #669DB3FF;
     border-color: #669DB3FF;
     color: white;
+}
+
+.bg-dark4 {
+    background-color: #494e55 !important;
 }
 </style>

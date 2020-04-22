@@ -23,6 +23,8 @@ import Recommendation from './components/Recommendation'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
+import info from '../info'
+
 export default {
   name: 'App',
   components: {
@@ -37,15 +39,20 @@ export default {
   },
   data () {
     return {
-      nightMode: false
+      nightMode: false,
+      config: info.config
     }
   },
   created() {
-    this.nightMode = this.$cookie.get('nightMode') === 'true' ? true : false
+    if (this.config.use_cookies) {
+      this.nightMode = this.$cookie.get('nightMode') === 'true' ? true : false
+    }
   },
   methods: {
     switchMode(mode) {
-      this.$cookie.set('nightMode', mode);
+      if (this.config.use_cookies) {
+        this.$cookie.set('nightMode', mode);
+      }
       this.nightMode = mode
     },
     scrollTo(ele) {

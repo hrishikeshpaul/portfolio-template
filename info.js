@@ -3,6 +3,7 @@ let info = {
     logo_name: "paul",
     flat_picture: require('./src/assets/potrait.svg'),
     config: {
+        use_cookies: true,
         navbar: {
             blur: false
         }

@@ -7,10 +7,10 @@
             <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
             <div class="row">
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
-                    <Timeline :data="education"/>
+                    <Timeline :data="education" :nightMode="nightMode" />
                 </div>
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
-                    <Timeline :data="experience"/>
+                    <Timeline :data="experience" :nightMode="nightMode" />
                 </div>
             </div>
         </div>

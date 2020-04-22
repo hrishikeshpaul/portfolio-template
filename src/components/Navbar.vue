@@ -23,7 +23,7 @@
             <li class="nav-item mx-2">
               <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'contact')" :class="{'text-light': nightMode}">contact</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item ml-2">
               <a class="nav-link" href="#" @click.prevent="switchMode" :class="{'text-light': nightMode}"><i :class='{"fas fa-moon": nightMode, "far fa-moon": !nightMode}'></i></a>
             </li>
           </ul>
@@ -78,7 +78,8 @@ button:hover {
 }
 
 nav {
-   position:fixed !important;
+  border-bottom: 1px solid rgba(160, 159, 159, 0.336);
+  position:fixed !important;
 }
 
 .navbar-blur {

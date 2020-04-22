@@ -11,7 +11,7 @@
                                 <div class="px-2 title3">{{e.degree || e.position}} {{e.gpa ? '(' + e.gpa + ')' : ''}}</div>
                                 <div class="px-2 date">{{e.date}}</div>
                                 <div class="px-2 pb-2 pt-2" style="text-align: justify;">{{e.description}}</div>
-                                <span class="mx-2 badge p-2 mb-2 text-dark" v-for="s in e.skills" :key="s">{{s}}</span>
+                                <span class="mx-2 badge p-2 mb-2" v-for="s in e.skills" :key="s" :class="{'bg-dark2': nightMode}">{{s}}</span>
                                 <p class='m-2'> </p>
                             </div>
                         </li>
@@ -28,6 +28,9 @@ export default {
     props: {
         data: {
             type: Object
+        },
+        nightMode: {
+            type: Boolean
         }
     }
 }
@@ -96,5 +99,9 @@ ul.timeline > li:before {
     width: 20px;
     height: 20px;
     z-index: 400;
+}
+
+.bg-dark2 {
+    background-color: #3c4148 !important;
 }
 </style>
