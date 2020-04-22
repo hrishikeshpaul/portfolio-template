@@ -133,7 +133,7 @@ export default {
     color: white;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 1000px) {
     .pinput {
         width: 90%;
     }
