@@ -1,7 +1,9 @@
 <template>
     <div class="container py-4">
-        <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000" >skills.</p>
-            <hr width="50%" />
+        <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+            <span class="title text-center" :class="{'pgray': !nightMode, 'text-light': nightMode}">skills.</span>
+        </div>
+            <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
             <br />
         <div class="row">
             <div 
@@ -19,7 +21,7 @@
             >
                 <div class="bg-div"><i :class="skill.icon"></i></div>
                 <div class="title2 pt-2">{{skill.title}}</div>
-                <hr width="50%"/>
+                <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
                 <span class="title3">{{skill.info.join(', ')}}</span> 
             </div>
         </div>
@@ -31,6 +33,11 @@ import info from '../../info'
 
 export default {
     name: "Skills",
+    props: {
+        nightMode: {
+            type: Boolean
+        }
+    },
     data () {
         return {
             skills: info.skills
@@ -51,7 +58,7 @@ export default {
 
 .title2 {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .title3 {
@@ -62,7 +69,6 @@ export default {
 .fa { 
     color: rgb(212, 149, 97);
     font-size: 40px;
-    /* font-weight: bold; */
     transition: all 0.5s;
 }
 

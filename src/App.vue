@@ -90,6 +90,6 @@ export default {
 }
 
 .text-light {
-  color: #d0d0d0 !important;
+  color: #d3d2d2 !important;
 }
 </style>
