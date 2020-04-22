@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Navbar @scroll="scrollTo"  data-aos="fade" data-aos-once="true" data-aos-duration="1000"/>
+    <Navbar @scroll="scrollTo"/>
     <div class="parent">
-      <Home data-aos="fade" />
+      <Home data-aos="fade" data-aos-once="true" data-aos-duration="1000" />
       <About id="about" />
       <Skills id="skills"/>
       <Portfolio id="portfolio" />

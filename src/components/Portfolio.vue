@@ -5,11 +5,13 @@
         <hr width="50%" />
         <br />
         <div class="row">
-          <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="portfolio in portfolio_info" :key="portfolio.name">
-            <Card :portfolio="portfolio" @show="showModalFn" data-aos="fade"
-                data-aos-offset="300"
-                data-aos-delay="50"
-                data-aos-duration="1000"
+          <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in portfolio_info" :key="portfolio.name">
+            <Card 
+                :style="{'transition-delay': idx/4.2+'s'}"
+                :portfolio="portfolio" @show="showModalFn" data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-delay="10"
+                data-aos-duration="800"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="true"/>

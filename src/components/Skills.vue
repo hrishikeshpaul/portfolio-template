@@ -6,12 +6,13 @@
         <div class="row">
             <div 
                 class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4" 
-                v-for="skill in skills" 
+                v-for="(skill, idx) in skills" 
                 :key="skill.title" 
                 data-aos="fade-up"
-                data-aos-offset="100"
+                data-aos-offset="10"
                 data-aos-delay="30"
-                data-aos-duration="1000"
+                :style="{'transition-delay': idx/4.2+'s'}"
+                data-aos-duration="800"
                 data-aos-easing="ease-in-out"
                 data-aos-mirror="true"
                 data-aos-once="true"
