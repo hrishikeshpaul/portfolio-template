@@ -1,6 +1,6 @@
 <template>
     <div class="my-3 mx-3" >
-        <div class="card pcard" >
+        <div class="card smcard" :class="{'pcard-dark': nightMode, 'pcard': !nightMode, 'bg-dark3': nightMode}">
             <div style="height: 180px;">
                 <img class="card-img-top" :src="portfolio.pictures[0]" alt="Card image cap">
             </div>
@@ -8,7 +8,7 @@
                 <h5 class="title2">{{portfolio.name}}</h5>
                 <div >
                     <div class="pb-1 bheight">
-                        <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
+                        <span class="badge mr-2 mb-2 text-dark" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
                     </div>
                 <p class="title3 m-0 pb-2 pheight pt-1" v-html="portfolio.description.length > 100 ? portfolio.description.substring(0, 105) + '...' : portfolio.description">{{}}</p>
                 </div>
@@ -28,6 +28,9 @@ export default {
     props: {
         portfolio: {
             type: Object
+        },
+        nightMode: {
+            type: Boolean
         }
     },
     methods: {
@@ -45,10 +48,11 @@ export default {
 
 
 img {
-    border-radius: 10px;
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    max-width: 100%; max-height: 100%;  object-fit: cover;
+    max-width: 100%; 
+    max-height: 100%;  
+    object-fit: cover;
 }
 
 
@@ -98,12 +102,21 @@ div.img-div {
     box-shadow: 1px 1px 15px rgb(216, 216, 216);
 }
 
-.pcard-body:active {
+.pcard-dark {
+    border-radius: 7px;
+    border: none;
+    background-color: #30363a !important;
+    /* box-shadow: 1px 1px 12px rgb(53, 53, 53); */
     transition: all 0.5s;
-    background-color: rgb(233, 233, 233);
-    cursor: pointer;
-    box-shadow: 1px 1px 10px rgb(205, 205, 205);
+    height: 460px;
 }
+
+.pcard-dark:hover {
+    transition: all 0.5s;
+    /* cursor: pointer; */
+    box-shadow: 1px 1px 12px rgb(53, 53, 53);
+}
+
 
 .pcard-body {
     border-top: 1px solid rgb(220, 220, 220);
@@ -159,5 +172,8 @@ div.img-div {
     color: white;
 }
 
+.bg-dark3 {
+    background-color:rgb(82, 82, 82)
+}
 
 </style>

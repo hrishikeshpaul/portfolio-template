@@ -1,14 +1,19 @@
 <template>
-    <div class="py-4 bg-light">
+    <div class="py-4" :class="{'bg-light': !nightMode, 'bg-dark2': nightMode, 'text-light': nightMode}">
       <div class="container">
-        <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">portfolio.</p>
-        <hr width="50%" />
+        <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+            <span class="title text-center" :class="{'pgray': !nightMode, 'text-light': nightMode}">portfolio.</span>
+        </div>
+        <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}"  />
         <br />
         <div class="row">
           <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in portfolio_info" :key="portfolio.name">
             <Card 
               :style="{'transition-delay': (idx % 3)/4.2+'s'}"
-              :portfolio="portfolio" @show="showModalFn" data-aos="fade-up"
+              :portfolio="portfolio" 
+              @show="showModalFn" 
+              data-aos="fade-up"
+              :nightMode="nightMode"
               data-aos-offset="100"
               data-aos-delay="10"
               data-aos-duration="800"
@@ -23,7 +28,7 @@
         </div>
       </div>
       <transition name="modal">
-        <Modal :showModal="showModal" @close="showModal = false" v-if="showModal" :portfolio="modal_info" />
+        <Modal :showModal="showModal" @close="showModal = false" v-if="showModal" :portfolio="modal_info" :nightMode="nightMode" />
       </transition>
     </div>
 </template>
@@ -38,6 +43,11 @@ export default {
     components: {
       Card,
       Modal
+    },
+    props: {
+      nightMode: {
+        type: Boolean
+      }
     },
     data () {
         return {
@@ -73,7 +83,7 @@ export default {
           this.number += 3
 
           window.scrollBy({
-            top: document.getElementsByClassName('pcard')[0].clientHeight,
+            top: document.getElementsByClassName('smcard')[0].clientHeight,
             behavior: 'smooth'
           })
 

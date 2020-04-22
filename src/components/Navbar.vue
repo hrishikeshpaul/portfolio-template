@@ -72,8 +72,13 @@ button:hover {
   outline: none;
 }
 
+nav {
+   position:fixed !important;
+}
+
 .navbar-blur {
   background-color: #ffffff7e;
   backdrop-filter: blur(12px);
+
 }
 </style>

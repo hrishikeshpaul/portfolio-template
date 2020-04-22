@@ -2,20 +2,20 @@
     <div>
         <div class="modal-mask">
             <div class="modal-wrapper">
-                <div class="modal-container">
+                <div class="modal-container" :class="{'bg-light': !nightMode, 'bg-dark': nightMode, 'text-light': nightMode}">
                     <div class="">
                         <Carousel :images="portfolio.pictures" :name="portfolio.name"/>
                     </div>
                     <div class="modal-body my-0 pb-0 px-4">
                         <div class="title1">
-                            <span><a href="#" @click.prevent="open(portfolio.visit)">{{portfolio.name}}</a></span>
+                            <span><a href="#" @click.prevent="open(portfolio.visit)" :class="{'text-light': nightMode}">{{portfolio.name}}</a></span>
                         </div>
-                        <hr class="m-1" />
-                        <div class="pgray mb-2 date">
+                        <hr class="m-1" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
+                        <div class="mb-2 date" :class="{'text-light': nightMode, 'pbgray': nightMode}">
                             <span>{{portfolio.date}} • {{portfolio.category}}</span>
                         </div>
                         <div class="pb-1 bheight">
-                            <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
+                            <span class="badge mr-2 mb-2 text-dark" v-for="tech in portfolio.technologies" :key="tech">{{tech}}</span>
                         </div>
 
                         <div style="text-align: justify; overflow: auto; max-height: 350px;">
@@ -47,6 +47,9 @@ export default {
         },
         portfolio: {
             type: Object
+        },
+        nightMode: {
+            type: Boolean
         }
     },
     methods: {
@@ -71,7 +74,7 @@ a:hover {
 
 .date {
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
 }
 .modal-mask {
   position: fixed;
@@ -93,7 +96,6 @@ a:hover {
 .modal-container {
   width: 40%;
   margin: 0px auto;
-  background-color: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
