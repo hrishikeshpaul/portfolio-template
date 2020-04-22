@@ -1,7 +1,9 @@
 <template>
-    <div class="bg-light py-4">
+    <div class="py-4" :class="{'bg-light': !nightMode, 'bg-dark2': nightMode, 'text-light': nightMode}">
         <div class="container">
-            <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">about me.</p>
+            <div class="text-center">
+                <span class="title text-center" :class="{'pgray': !nightMode, 'text-light': nightMode}">about me.</span>
+            </div>
             <hr width="50%" />
             <div class="row">
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
@@ -23,6 +25,11 @@ export default {
     name: 'About',
     components: {
         Timeline,
+    },
+    props: {
+        nightMode: {
+            type: Boolean
+        }
     },
     data() { 
         return {

@@ -11,7 +11,7 @@
                                 <div class="px-2 title3">{{e.degree || e.position}} {{e.gpa ? '(' + e.gpa + ')' : ''}}</div>
                                 <div class="px-2 date">{{e.date}}</div>
                                 <div class="px-2 pb-2 pt-2" style="text-align: justify;">{{e.description}}</div>
-                                <span class="mx-2 badge p-2 mb-2" v-for="s in e.skills" :key="s">{{s}}</span>
+                                <span class="mx-2 badge p-2 mb-2 text-dark" v-for="s in e.skills" :key="s">{{s}}</span>
                                 <p class='m-2'> </p>
                             </div>
                         </li>
@@ -55,11 +55,11 @@ export default {
     font-weight: 500;
 }
 
-.badge:hover { 
+/* .badge:hover { 
     transition: all 0.5s;
     box-shadow: 2px 2px 5px rgb(179, 179, 179);
 
-}
+} */
 
 .date {
     font-size: 14px;
@@ -77,7 +77,8 @@ ul.timeline:before {
     position: absolute;
     left: 29px;
     width: 2px;
-    height: 100%;
+    height: 93%;
+    margin-top: 20px;
     z-index: 400;
 }
 ul.timeline > li {
@@ -86,11 +87,11 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
     content: ' ';
-    background: white;
+    background: rgb(212, 149, 97);
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 2px solid rgb(212, 149, 97);
+    border: 2px solid rgb(236, 159, 117);
     left: 20px;
     width: 20px;
     height: 20px;

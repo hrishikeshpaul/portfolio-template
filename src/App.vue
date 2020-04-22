@@ -86,7 +86,7 @@ export default {
 }
 
 .bg-dark2 {
-  background-color: #181e24
+  background-color: #262c30
 }
 
 .text-light {
