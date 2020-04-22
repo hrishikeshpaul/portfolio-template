@@ -1,7 +1,9 @@
 <template>
     <div class="container py-4">
-        <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">recommendations.</p>
-            <hr width="50%" />
+        <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+            <span class="title text-center" :class="{'pgray': !nightMode, 'text-light': nightMode}">recommendations.</span>
+        </div>
+            <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
         <div class="row">
             <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 py-3 px-5" v-for="d in data" :key="d.author">
                 <div class="title2" data-aos="fade-left" data-aos-once="true" data-aos-easing="ease-in-out"
@@ -22,6 +24,11 @@ import info from '../../info'
 
 export default {
     name: 'Recommendation',
+    props: {
+        nightMode: {
+            type: Boolean
+        }
+    },
     data () {
         return {
             data: info.recommendations

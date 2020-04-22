@@ -1,20 +1,22 @@
 <template>
-    <div class="bg-light py-4">
+    <div class="py-4" :class="{'bg-light': !nightMode, 'bg-dark2': nightMode, 'text-light': nightMode}">
         <div class="container">
-            <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">contact.</p>
-            <hr width="50%" />
+            <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
+                <span class="title text-center" :class="{'pgray': !nightMode, 'text-light': nightMode}">contact.</span>
+            </div>
+            <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
             <br />
             <div class="text-center">
                 <div class="mb-3" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-                    <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput pgray"/>
+                    <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" />
                 </div>
 
                 <div class="my-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-                    <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput pgray"/>
+                    <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" />
                 </div>
 
                 <div class="my-3" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-                    <textarea name="message" v-model="text" placeholder="message" class="pinput pgray" rows="4"></textarea>
+                    <textarea name="message" v-model="text" placeholder="message" class="pinput" rows="4" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" ></textarea>
                 </div>
 
                 <button @click.prevent="sendEmail" class="mt-1 btn mb-3" data-aos="fade" data-aos-once="true" data-aos-duration="1000" data-aos-offset="50">Send</button>
@@ -36,6 +38,11 @@ export default {
     name: "Contact",
     components: {
         Snackbar
+    },
+    props: {
+        nightMode: {
+            type: Boolean
+        }
     },
     data () {
         return {
@@ -131,6 +138,10 @@ export default {
     background-color: #669DB3FF;
     border-color: #669DB3FF;
     color: white;
+}
+
+.pgray-dark {
+    background-color: #393e41;
 }
 
 @media screen and (max-width: 1000px) {
