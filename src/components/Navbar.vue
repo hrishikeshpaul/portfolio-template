@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" :class="{'bg-light': !navbarConfig.blur, 'navbar-blur': navbarConfig.blur}">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" :class="{'bg-light': !nightMode, 'navbar-blur': navbarConfig.blur, 'bg-dark2': nightMode}">
       <div class="container">
         <a class="navbar-brand" href="/" @click.prevent="$emit('scroll', 'home')">
-          <Logo />
+          <Logo :nightMode="nightMode" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -12,17 +12,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'about')">about</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'about')" :class="{'text-light': nightMode}">about</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'skills')">skills</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'skills')" :class="{'text-light': nightMode}">skills</a>
             </li>
             <li class="nav-item mx-2 ">
-              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'portfolio')">portfolio</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'portfolio')" :class="{'text-light': nightMode}">portfolio</a>
             </li>
             <li class="nav-item mx-2">
-              
-              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'contact')">contact</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'contact')" :class="{'text-light': nightMode}">contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" @click.prevent="switchMode" :class="{'text-light': nightMode}"><i :class='{"fas fa-moon": nightMode, "far fa-moon": !nightMode}'></i></a>
             </li>
           </ul>
         </div>
@@ -39,11 +41,18 @@ export default {
     name: "Navbar",
     data () {
       return {
-        navbarConfig: info.config.navbar
+        navbarConfig: info.config.navbar,
+        nightMode: false
       }
     },
     components: {
       Logo
+    },
+    methods: {
+      switchMode() {
+        this.nightMode = !this.nightMode
+        this.$emit('nightMode', this.nightMode)
+      }
     }
 }
 </script>

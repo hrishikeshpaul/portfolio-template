@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
-    <Navbar @scroll="scrollTo"/>
+  <div id="app" :class="{'bg-white': !nightMode, 'bg-dark': nightMode, 'text-dark': !nightMode, 'text-light': nightMode}">
+    <Navbar @scroll="scrollTo" @nightMode="switchMode"/>
     <div class="parent">
-      <Home data-aos="fade" data-aos-once="true" data-aos-duration="1000" />
-      <About id="about" />
-      <Skills id="skills"/>
-      <Portfolio id="portfolio" />
-      <Recommendation />
-      <Contact id="contact"/>
-      <Footer />
+      <Home data-aos="fade" data-aos-once="true" data-aos-duration="1000" :nightMode="nightMode" />
+      <About id="about" :nightMode="nightMode" />
+      <Skills id="skills" :nightMode="nightMode" />
+      <Portfolio id="portfolio" :nightMode="nightMode" />
+      <Recommendation :nightMode="nightMode" />
+      <Contact id="contact" :nightMode="nightMode" />
+      <Footer :nightMode="nightMode" />
     </div>
   </div>
 </template>
@@ -35,7 +35,15 @@ export default {
     Contact,
     Footer
   },
+  data () {
+    return {
+      nightMode: false
+    }
+  },
   methods: {
+    switchMode(mode) {
+      this.nightMode = mode
+    },
     scrollTo(ele) {
       if (ele== 'home') {
         window.scrollTo({top: -80, behavior: 'smooth'});
@@ -64,7 +72,7 @@ export default {
 }
 
 .parent {
-  margin-top: 80px;
+  margin-top: 78px;
   padding-top: 40px;
   position: relative;
 }
@@ -75,5 +83,13 @@ export default {
 
 .pblue {
    color: #669DB3FF
+}
+
+.bg-dark2 {
+  background-color: #181e24
+}
+
+.text-light {
+  color: #d0d0d0 !important;
 }
 </style>

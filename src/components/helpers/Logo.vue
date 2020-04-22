@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span class="logo-title-name pgray">{{name}}</span>
+        <span class="logo-title-name" :class="{'pgray': !nightMode, 'text-light': nightMode}">{{name}}</span>
         <span class="logo-title-dot pblue">{{dot}}</span>
     </div>
 </template>
@@ -10,6 +10,11 @@ import info from '../../../info'
 
 export default {
     name: "Logo",
+    props: {
+        nightMode: {
+            type: Boolean
+        }
+    },
     data () {
         return {
             name: info.logo_name,
