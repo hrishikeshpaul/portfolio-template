@@ -7,14 +7,15 @@
         <div class="row">
           <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="(portfolio, idx) in portfolio_info" :key="portfolio.name">
             <Card 
-                :style="{'transition-delay': idx/4.2+'s'}"
-                :portfolio="portfolio" @show="showModalFn" data-aos="fade-up"
-                data-aos-offset="100"
-                data-aos-delay="10"
-                data-aos-duration="800"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="true"/>
+              :style="{'transition-delay': (idx % 3)/4.2+'s'}"
+              :portfolio="portfolio" @show="showModalFn" data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-delay="10"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
+              data-aos-once="true"
+            />
           </div>
         </div>
         <div class="text-center py-3">
