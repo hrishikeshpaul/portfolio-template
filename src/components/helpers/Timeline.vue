@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-xl-12 col-bg-12 col-sm-6">
                     <p class="title1" data-aos="fade" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-duration="1000">{{data.title}}</p>
-                    <ul class="timeline m-0 pt-1" v-for="(e, idx) in data.data" :key="e.name">
+                    <ul class="timeline m-0 pt-1" v-for="(e, idx) in data.data" :key="e.name" :style="{'transition-delay': idx/4.2+'s'}" data-aos="fade-up" data-offset="10" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-duration="500">
                         <li class="m-0 pb-2">
-                            <div :style="{'transition-delay': idx/4.2+'s'}" data-aos="fade-up" data-offset="10" data-aos-once="true" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-duration="500">
+                            <div >
                                 <div class="px-2 title2">{{e.name}}, {{e.place}}</div>
                                 <div class="px-2 title3">{{e.degree || e.position}} {{e.gpa ? '(' + e.gpa + ')' : ''}}</div>
                                 <div class="px-2 date">{{e.date}}</div>

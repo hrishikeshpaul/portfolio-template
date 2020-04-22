@@ -17,7 +17,7 @@
                     <textarea name="message" v-model="text" placeholder="message" class="pinput pgray" rows="4"></textarea>
                 </div>
 
-                <button @click.prevent="sendEmail" class="mt-1 btn w-50 mb-3" data-aos="fade" data-aos-once="true" data-aos-duration="1000">Send</button>
+                <button @click.prevent="sendEmail" class="mt-1 btn mb-3" data-aos="fade" data-aos-once="true" data-aos-duration="1000" data-aos-offset="50">Send</button>
             </div>
 
             <Snackbar :showSnackbar="showSnackbar" @close="closeSnackbar" :snackbarMessage="snackbarMessage" :snackbarColor="snackbarColor" />
@@ -117,7 +117,8 @@ export default {
 
 .btn {
     border-color: #669DB3FF;
-    color: #669DB3FF
+    color: #669DB3FF;
+    width: 50%;
 }
 
 .btn:hover {
@@ -130,6 +131,19 @@ export default {
     background-color: #669DB3FF;
     border-color: #669DB3FF;
     color: white;
+}
+
+@media screen and (max-width: 580px) {
+    .pinput {
+        width: 90%;
+    }
+    .pinput {
+        width: 90%;
+    }
+
+    .btn {
+        width: 90%;
+    }
 }
 
 
