@@ -91,12 +91,26 @@ a:hover {
 }
 
 .modal-container {
-  width: 35%;
+  width: 40%;
   margin: 0px auto;
   background-color: #fff;
   border-radius: 7px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
+}
+
+@media screen and (max-width: 1600px){
+    .modal-container {
+        width: 60%;
+
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .modal-container {
+        width: 80%;
+
+    }
 }
 
 @media screen and (max-width: 580px){

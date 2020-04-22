@@ -4,10 +4,10 @@
             <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">about me.</p>
             <hr width="50%" />
             <div class="row">
-                <div class="col-xl-6 col-bg-6 col-md-12 col-sm-12">
+                <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
                     <Timeline :data="education"/>
                 </div>
-                <div class="col-xl-6 col-bg-6 col-md-12 col-sm-12">
+                <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
                     <Timeline :data="experience"/>
                 </div>
             </div>
