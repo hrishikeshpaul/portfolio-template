@@ -7,16 +7,16 @@
             <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
             <br />
             <div class="text-center">
-                <div class="mb-3" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-                    <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" />
+                <div class="mb-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" style="transition-delay: 0.2s"/>
                 </div>
 
-                <div class="my-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
-                    <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" />
+                <div class="my-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" style="transition-delay: 0.4s"/>
                 </div>
 
-                <div class="my-3" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
-                    <textarea name="message" v-model="text" placeholder="message" class="pinput" rows="4" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" ></textarea>
+                <div class="my-3" data-aos="fade-up" data-aos-once="true" data-aos-duration="1000">
+                    <textarea name="message" v-model="text" placeholder="message" class="pinput" rows="4" :class="{'pgray': !nightMode, 'pgray-dark': nightMode, 'text-light': nightMode}" style="transition-delay: 0.6s"></textarea>
                 </div>
 
                 <button @click.prevent="sendEmail" class="mt-1 btn mb-3" data-aos="fade" data-aos-once="true" data-aos-duration="1000" data-aos-offset="50">Send</button>

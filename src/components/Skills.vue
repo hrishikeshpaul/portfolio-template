@@ -15,7 +15,7 @@
                     data-aos-offset="10"
                     data-aos-delay="30"
                     :style="{'transition-delay': idx/4.2+'s'}"
-                    data-aos-duration="800"
+                    data-aos-duration="500"
                     data-aos-easing="ease-in-out"
                     data-aos-mirror="true"
                     data-aos-once="true"

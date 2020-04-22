@@ -7,11 +7,11 @@
                 <hr width="50%" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
             <div class="row">
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 py-3 px-5" v-for="d in data" :key="d.author">
-                    <div class="title2" data-aos="fade-left" data-aos-once="true" data-aos-easing="ease-in-out"
+                    <div class="title2" data-aos="fade-up" data-aos-once="true" data-aos-easing="ease-in-out"
                     data-aos-mirror="true">
                         <span>"{{d.title}}"</span>
                     </div>
-                    <div class="title3 float-right py-2 pl-5" data-aos="fade-right" data-aos-once="true" data-aos-easing="ease-in-out"
+                    <div class="title3 float-right py-2 pl-5" data-aos="fade-up" data-aos-once="true" data-aos-easing="ease-in-out"
                     data-aos-mirror="true">
                         <span> – {{d.author}}, {{d.position}}, {{d.company}}, {{d.location}}</span>
                     </div>
@@ -50,7 +50,7 @@ export default {
 }
 
 .title2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     font-style: italic;
     text-align: justify;
