@@ -1,8 +1,8 @@
 <template>
-  <div id="app" :class="{'bg-white': !nightMode, 'bg-dark': nightMode, 'text-dark': !nightMode, 'text-light': nightMode}">
+  <div id="app" :class="{'text-dark': !nightMode, 'text-light': nightMode}">
     <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode"/>
     <div class="parent">
-      <Home data-aos="fade" data-aos-once="true" data-aos-duration="1000" :nightMode="nightMode" />
+      <Home :nightMode="nightMode" />
       <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
       <Portfolio id="portfolio" :nightMode="nightMode" />
@@ -83,7 +83,7 @@ export default {
 }
 
 .parent {
-  margin-top: 78px;
+  margin-top: 38px;
   padding-top: 40px;
   position: relative;
 }
@@ -102,5 +102,9 @@ export default {
 
 .text-light {
   color: #d3d2d2 !important;
+}
+
+.p-st {
+    transition: all 0.5s !important;
 }
 </style>

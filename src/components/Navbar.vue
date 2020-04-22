@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" :class="{'bg-light': !nightMode, 'navbar-blur': navbarConfig.blur, 'bg-dark2': nightMode}">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top p-st" :class="{'bg-light': !nightMode, 'navbar-blur': navbarConfig.blur, 'bg-dark2': nightMode}">
       <div class="container">
         <a class="navbar-brand" href="/" @click.prevent="$emit('scroll', 'home')">
           <Logo :nightMode="nightMode" />

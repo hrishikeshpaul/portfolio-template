@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="container">
+    <div :class="{'bg-white': !nightMode, 'bg-dark': nightMode}" class="pt-5 p-st">
+        <div class="container" data-aos="fade" data-aos-once="true" data-aos-duration="1000" >
             <div class="row align-items-center">
                 <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
                     <img :src="picture" />
@@ -17,7 +17,7 @@
                         <button class="btn btn-outline-secondary mx-2" @click="open('resume')"><i class="fa fa-file"></i></button>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
     </div>
 </template>
