@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" :class="{'bg-light': !navbarConfig.blur, 'navbar-blur': navbarConfig.blur}">
       <div class="container">
         <a class="navbar-brand" href="/" @click.prevent="$emit('scroll', 'home')">
           <Logo />
@@ -33,9 +33,15 @@
 
 <script>
 import Logo from './helpers/Logo'
+import info from '../../info'
 
 export default {
     name: "Navbar",
+    data () {
+      return {
+        navbarConfig: info.config.navbar
+      }
+    },
     components: {
       Logo
     }
@@ -44,11 +50,7 @@ export default {
 
 <style scoped>
 .nav-link {
-  font-weight: 400;
-}
-
-nav {
-  border-bottom: 1px solid #e8e8e8;
+  font-weight: 500;
 }
 
 button {
@@ -59,5 +61,10 @@ button {
 button:hover {
   border:none;
   outline: none;
+}
+
+.navbar-blur {
+  background-color: #ffffff7e;
+  backdrop-filter: blur(12px);
 }
 </style>

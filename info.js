@@ -2,6 +2,11 @@ let info = {
     name: "Hrishikesh Paul",
     logo_name: "paul",
     flat_picture: require('./src/assets/potrait.svg'),
+    config: {
+        navbar: {
+            blur: false
+        }
+    },
     description: 'I\'m Hrishikesh Paul, a technology enthusiast currently pursuing my Master\'s in Computer Science at Indiana University Bloomington. Majority of my work consists of web and software development, but lately I have been spending time in the field of Artificial Intelligence and Computer Vision. While being away form my work desk, I love being outdoors playing soccer. Music production, cooking, videography and photography are some of my favourite hobbies!',
     links: {
         linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
