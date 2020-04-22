@@ -4,7 +4,9 @@ import App from './App.vue'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import VueParallaxJs from 'vue-parallax-js'
+var VueCookie = require('vue-cookie');
 
+Vue.use(VueCookie);
 Vue.use(VueParallaxJs)
 
 

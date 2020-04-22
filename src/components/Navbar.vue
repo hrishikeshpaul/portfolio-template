@@ -39,10 +39,15 @@ import info from '../../info'
 
 export default {
     name: "Navbar",
+    props: {
+      nightMode: {
+        type: Boolean
+      }
+    },
     data () {
       return {
         navbarConfig: info.config.navbar,
-        nightMode: false
+        localNightMode: this.nightMode
       }
     },
     components: {
@@ -50,8 +55,8 @@ export default {
     },
     methods: {
       switchMode() {
-        this.nightMode = !this.nightMode
-        this.$emit('nightMode', this.nightMode)
+        this.localNightMode = !this.localNightMode
+        this.$emit('nightMode', this.localNightMode)
       }
     }
 }

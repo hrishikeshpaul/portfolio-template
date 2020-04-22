@@ -1,6 +1,6 @@
 <template>
   <div id="app" :class="{'bg-white': !nightMode, 'bg-dark': nightMode, 'text-dark': !nightMode, 'text-light': nightMode}">
-    <Navbar @scroll="scrollTo" @nightMode="switchMode"/>
+    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode"/>
     <div class="parent">
       <Home data-aos="fade" data-aos-once="true" data-aos-duration="1000" :nightMode="nightMode" />
       <About id="about" :nightMode="nightMode" />
@@ -40,8 +40,12 @@ export default {
       nightMode: false
     }
   },
+  created() {
+    this.nightMode = this.$cookie.get('nightMode') === 'true' ? true : false
+  },
   methods: {
     switchMode(mode) {
+      this.$cookie.set('nightMode', mode);
       this.nightMode = mode
     },
     scrollTo(ele) {
