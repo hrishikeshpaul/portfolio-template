@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-    <Navbar @scroll="scrollTo"/>
+    <Navbar @scroll="scrollTo"  data-aos="fade" data-aos-once="true" data-aos-duration="1000"/>
     <div class="parent">
-      <Home />
+      <Home data-aos="fade" />
       <About id="about" />
-      <Skills id="skills" />
+      <Skills id="skills"/>
       <Portfolio id="portfolio" />
       <Recommendation />
       <Contact id="contact"/>

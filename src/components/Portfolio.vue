@@ -1,12 +1,18 @@
 <template>
     <div class="py-4 bg-light">
       <div class="container">
-        <p class="title pgray text-center">portfolio.</p>
+        <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">portfolio.</p>
         <hr width="50%" />
         <br />
         <div class="row">
           <div class="col-xl-4 col-bg-4 col-md-6 col-sm-12" v-for="portfolio in portfolio_info" :key="portfolio.name">
-            <Card :portfolio="portfolio" @show="showModalFn"/>
+            <Card :portfolio="portfolio" @show="showModalFn" data-aos="fade"
+                data-aos-offset="300"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"/>
           </div>
         </div>
         <div class="text-center py-3">
@@ -36,7 +42,7 @@ export default {
           portfolio_info: [],
           showModal: false,
           modal_info: {},
-          number: 6,
+          number: 3,
           showBtn: 'show more',
           shower: 0
         }
@@ -81,7 +87,7 @@ export default {
           var elementPosition = document.getElementById('portfolio').offsetTop;
           window.scrollTo({top: elementPosition+5, behavior: 'smooth'});
           this.shower = 0
-          this.number = 6
+          this.number = 3
           this.showBtn = 'show more'
         }
 

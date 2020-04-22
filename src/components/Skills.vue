@@ -1,10 +1,21 @@
 <template>
     <div class="container py-4">
-        <p class="title pgray text-center">skills.</p>
+        <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000" >skills.</p>
             <hr width="50%" />
             <br />
         <div class="row">
-            <div class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4" v-for="skill in skills" :key="skill.title">
+            <div 
+                class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4" 
+                v-for="skill in skills" 
+                :key="skill.title" 
+                data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-delay="30"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+            >
                 <div class="bg-div"><i :class="skill.icon"></i></div>
                 <div class="title2 pt-2">{{skill.title}}</div>
                 <hr width="50%"/>

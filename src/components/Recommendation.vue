@@ -1,13 +1,15 @@
 <template>
     <div class="container py-4">
-        <p class="title pgray text-center">recommendations.</p>
+        <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">recommendations.</p>
             <hr width="50%" />
         <div class="row">
             <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 py-3 px-5" v-for="d in data" :key="d.author">
-                <div class="title2">
+                <div class="title2" data-aos="fade-left" data-aos-once="true" data-aos-easing="ease-in-out"
+                data-aos-mirror="true">
                     <span>"{{d.title}}"</span>
                 </div>
-                <div class="title3 float-right py-2 pl-5">
+                <div class="title3 float-right py-2 pl-5" data-aos="fade-right" data-aos-once="true" data-aos-easing="ease-in-out"
+                data-aos-mirror="true">
                     <span> – {{d.author}}, {{d.position}}, {{d.company}}, {{d.location}}</span>
                 </div>
             </div>

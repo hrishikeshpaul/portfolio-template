@@ -1,23 +1,23 @@
 <template>
     <div class="bg-light py-4">
         <div class="container">
-            <p class="title pgray text-center">contact.</p>
+            <p class="title pgray text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">contact.</p>
             <hr width="50%" />
             <br />
             <div class="text-center">
-                <div class="mb-3">
+                <div class="mb-3" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
                     <input type="text" name="user_name" v-model="name" placeholder="name" class="pinput pgray"/>
                 </div>
 
-                <div class="my-3">
+                <div class="my-3" data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">
                     <input type="email" name="user_email" v-model="email" placeholder="email" class="pinput pgray"/>
                 </div>
 
-                <div class="my-3">
+                <div class="my-3" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
                     <textarea name="message" v-model="text" placeholder="message" class="pinput pgray" rows="4"></textarea>
                 </div>
 
-                <button @click.prevent="sendEmail" class="mt-1 btn w-50 mb-3">Send</button>
+                <button @click.prevent="sendEmail" class="mt-1 btn w-50 mb-3" data-aos="fade" data-aos-once="true" data-aos-duration="1000">Send</button>
             </div>
 
             <Snackbar :showSnackbar="showSnackbar" @close="closeSnackbar" :snackbarMessage="snackbarMessage" :snackbarColor="snackbarColor" />
