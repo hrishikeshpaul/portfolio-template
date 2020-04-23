@@ -28,7 +28,7 @@
         </div>
       </div>
       <transition name="modal">
-        <Modal :showModal="showModal" @close="showModal = false" v-if="showModal" :portfolio="modal_info" :nightMode="nightMode" />
+        <Modal :showModal="showModal" @close="closeModal" v-if="showModal" :portfolio="modal_info" :nightMode="nightMode" />
       </transition>
     </div>
 </template>
@@ -74,6 +74,10 @@ export default {
       }
     },
     methods: {
+      closeModal() {
+        this.showModal = false
+        document.getElementsByTagName('body')[0].classList.remove('modal-open')  
+      },
       showModalFn(portfolio) {
         this.modal_info = portfolio
         this.showModal = true

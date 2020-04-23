@@ -52,6 +52,9 @@ export default {
             type: Boolean
         }
     },
+    created(){ 
+        document.getElementsByTagName('body')[0].classList.add('modal-open')  
+    },
     methods: {
         open(url) {
             window.open(url, '_blank')
@@ -61,6 +64,10 @@ export default {
 </script>
 
 <style scoped>
+body.modal-open {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none; 
     color: black;
