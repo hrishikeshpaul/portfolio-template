@@ -6,8 +6,6 @@ firebase.json
 .firebase
 .firebaserc
 
-/src/components/helpers/Modal2.vue
-
 config.js
 
 # local env files
