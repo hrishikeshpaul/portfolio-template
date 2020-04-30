@@ -6,7 +6,6 @@ firebase.json
 .firebase
 .firebaserc
 
-/src/components/helpers/Gallery.vue
 /src/components/helpers/Modal2.vue
 
 config.js

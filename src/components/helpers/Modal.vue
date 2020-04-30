@@ -3,14 +3,12 @@
         <div class="modal-mask">
             <div class="modal-wrapper">
                 <div class="modal-container" :class="{'bg-light': !nightMode, 'bg-dark': nightMode, 'text-light': nightMode}">
-                    <div class="">
-                        <Carousel :images="portfolio.pictures" :name="portfolio.name"/>
+                    <div class="title1 px-4 pt-3">
+                        <span><a href="#" @click.prevent="open(portfolio.visit)" :class="{'text-light': nightMode}">{{portfolio.name}}</a></span>
+                        <a class="pull-right" style="font-size: 18px;" @click="$emit('close')"><i class="fas fa-times"></i></a>
+                        <hr class="my-1" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
                     </div>
-                    <div class="modal-body my-0 pb-0 px-4">
-                        <div class="title1">
-                            <span><a href="#" @click.prevent="open(portfolio.visit)" :class="{'text-light': nightMode}">{{portfolio.name}}</a></span>
-                        </div>
-                        <hr class="m-1" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
+                    <div class="modal-body my-0 pb-0 px-4 pt-0">
                         <div class="mb-2 date" :class="{'text-light': nightMode, 'pbgray': nightMode}">
                             <span>{{portfolio.date}} • {{portfolio.category}}</span>
                         </div>
@@ -18,12 +16,17 @@
                             <span class="badge mr-2 mb-2" v-for="tech in portfolio.technologies" :key="tech" :class="{'bg-dark4': nightMode}">{{tech}}</span>
                         </div>
 
-                        <div style="text-align: justify; overflow: auto; max-height: 350px;">
+                        <div style="text-align: justify;">
                             <span v-html="portfolio.description"></span>
+                        </div>
+                        <hr />
+                        <div>
+                            <Gallery :images="portfolio.pictures"/>
                         </div>
                     </div>
 
-                    <div class="text-center py-3">
+                     <div class="text-center pb-3">
+                        <hr class="mt-1 mb-3" :class="{'pgray': !nightMode, 'bg-secondary': nightMode}" />
                         <button class="btn w-25 mr-3" @click="open(portfolio.github)">github</button>
                         <button class="btn w-25" @click="$emit('close')">close</button>
                     </div>
@@ -35,11 +38,13 @@
 
 <script>
 import Carousel from './Carousel'
+import Gallery from './Gallery'
 
 export default {
     name: 'Modal',
     components: {
-        Carousel
+        Carousel,
+        Gallery
     },
     props: {
         showModal: {
@@ -72,6 +77,7 @@ a {
     text-decoration: none; 
     color: black;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 a:hover {
@@ -91,22 +97,33 @@ a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
-  display: table;
   transition: opacity .5s ease;
 }
 
 .modal-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-container {
   width: 40%;
+  max-height: 70%;
   margin: 0px auto;
   border-radius: 7px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
   transition: all .3s ease;
+  flex-direction: column; 
+  display: flex; /*added*/
+
 }
+
+
+
 
 @media screen and (max-width: 1600px){
     .modal-container {
@@ -131,6 +148,8 @@ a:hover {
 
 .modal-body {
   margin: 20px 0;
+  overflow-y: scroll;
+  max-height: inherit;
 }
 
 .modal-enter {
