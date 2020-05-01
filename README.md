@@ -126,8 +126,6 @@ Live [demo](https://hrishikeshpaul.github.io/).
 
 ## Table of Contents (Optional)
 
-> If your `README` has a lot of info, section headers might be nice.
-
 - [Installation](#installation)
 - [Features](#features)
 - [Contributing](#contributing)
@@ -136,50 +134,46 @@ Live [demo](https://hrishikeshpaul.github.io/).
 - [Support](#support)
 - [License](#license)
 
-
----
-
-## Example (Optional)
-
-```javascript
-// code away!
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
-
 ---
 
 ## Installation
 
-- All the `code` required to get started
-- Images of what it should look like
+### Dependencies
+- npm
+- git
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/fvcproductions/SOMEREPO`
+> Get this repo to your local machine using,
+```shell
+$ git clone https://github.com/hrishikeshpaul/portfolio-template.git
+```
 
 ### Setup
 
-- If you want more syntax highlighting, format your code like this:
-
-> update and install this package first
+> Navigate to the project folder
 
 ```shell
-$ brew update
-$ brew install fvcproductions
+$ cd portfolio-template
 ```
 
-> now install npm and bower packages
+> To install the node packages used in the project:
 
 ```shell
 $ npm install
-$ bower install
 ```
+
+> Compiles and hot-reloads for development
+
+```shell
+$ npm run serve
+```
+
+> Compiles and minifies for production
+```shell
+$ npm run build
+```
+
 
 - For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
 
