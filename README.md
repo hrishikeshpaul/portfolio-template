@@ -245,14 +245,11 @@ The **contact** section of the template makes use of this API called [emailjs](h
 
 ### Option 1
   - Clone this repo to your local machine using `https://github.com/hrishikeshpaul/portfolio-template.git`
-
 - Code code code!
-
 - Create a new pull request using <a href="https://github.com/hrishikeshpaul/portfolio-template/compare/" target="_blank">`https://github.com/hrishikeshpaul/portfolio-template/compare/`</a>
 
 
 ### Option 2
-
 - Create an issue request, and I'll be certain to look at it as soon as possible!
 ---
 
