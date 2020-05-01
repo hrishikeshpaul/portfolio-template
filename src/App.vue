@@ -60,7 +60,7 @@ export default {
         window.scrollTo({top: -80, behavior: 'smooth'});
       } else {
         var elementPosition = document.getElementById(ele).offsetTop;
-        window.scrollTo({top: elementPosition+5, behavior: 'smooth'});
+        window.scrollTo({top: elementPosition - 35, behavior: 'smooth'});
       }
     }
   }
