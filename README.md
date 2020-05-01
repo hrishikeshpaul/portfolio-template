@@ -136,22 +136,22 @@ Please feel free to post any issue if found, or mail me at hrpaul@iu.edu. -->
 
 ---
 
-## Installation
+## Installation ⚙
 
-### Dependencies 🔁
+### Dependencies
 These are the local dependencies that are needed for development,
 
 - npm
 - git
 
-### Clone 👯
+### Clone
 
 Get this repo to your local machine using,
 ```shell
 $ git clone https://github.com/hrishikeshpaul/portfolio-template.git
 ```
 
-### Setup ⚙
+### Setup 
 
 To install the node packages used in the project:
 
@@ -189,11 +189,11 @@ A few notable elements that makes the website intuitive to use,
 
 This section goes over the tweaks that need to be made, and where can they be made. It also talks about the free emailing service that is been used.
 
-### Information 📄
+### Information 
 
 All the information on the template is present in `info.js` that can be found in the root director, or [here](https://github.com/hrishikeshpaul/portfolio-template/blob/master/info.js). This consists of various parameters that handle the information on the website. To add your own information, just edit the contents of this file, and the changes should be noticed. All the pictures need ot be present in `/src/assets` (or you can configure the path in the info.js file).
 
-### Email.js 📧
+### Email.js 
 
 The **contact** section of the template makes use of this API called [emailjs](https://www.emailjs.com/). It is a good service that provides 200 email free every month. You will need to configure your own emailjs account for the service to work.
 
@@ -237,11 +237,11 @@ The **contact** section of the template makes use of this API called [emailjs](h
 
 ## Contributing 🙇
 
-- 👯 Clone this repo to your local machine using `https://github.com/hrishikeshpaul/portfolio-template.git`
+- Clone this repo to your local machine using `https://github.com/hrishikeshpaul/portfolio-template.git`
 
-- **HACK AWAY!** 🔨🔨🔨
+- Code code code!
 
-- 🔃 Create a new pull request using <a href="https://github.com/hrishikeshpaul/portfolio-template/compare/" target="_blank">`https://github.com/hrishikeshpaul/portfolio-template/compare/`</a>.
+- Create a new pull request using <a href="https://github.com/hrishikeshpaul/portfolio-template/compare/" target="_blank">`https://github.com/hrishikeshpaul/portfolio-template/compare/`</a>.
 
 ---
 <!--
