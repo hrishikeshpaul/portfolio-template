@@ -173,16 +173,24 @@ $ npm run build
 
 ---
 
-<!-- ## Features
-## Usage (Optional)
+## Features
+
+A few notable elements that makes the website intuitive to use,
+| # | Feature | Screenshot |
+| - | - | - |
+| 1 |**Timeline**: Educations and Experiences are the in a timeline format. It shows most of the important details, a small description, and certain important keywords. The code to the timeline component can be found in [`/src/components/helpers/Timeline.vue`]("https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/components/helpers/Timeline.vue"), that is placed in the 'About.vue' component.| <img src="assets/timeline.png" width="500px"/> |
+| 2 |**Skills**: These display your skills by grouping them together. Along with a logo to depict each group, gives a great perception experience. The code to the timeline component can be found in [`/src/components/Skills.vue`]("https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/components/Skills.vue").| <img src="assets/skills.png" width="500px"/> |
+ 
+--- 
+<!-- ## Usage (Optional)
 ## Documentation (Optional)
 ## Tests (Optional)
 
 - Going into more detail on code and technologies used
 - I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
 
----
-
+--- -->
+<!--
 ## Contributing
 
 > To get started...
