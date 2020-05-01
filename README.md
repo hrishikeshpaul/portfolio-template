@@ -128,15 +128,14 @@ Please feel free to post any issue if found, or mail me at hrpaul@iu.edu. -->
 
 - [Installation](#installation)
 - [Features](#features)
+- [Usage](#usage)
 - [Contributing](#contributing)
-- [Team](#team)
-- [FAQ](#faq)
-- [Support](#support)
+- [Connect](#connect)
 - [License](#license)
 
 ---
 
-## Installation ⚙
+## Installation 
 
 ### Dependencies
 These are the local dependencies that are needed for development,
@@ -173,7 +172,7 @@ $ npm run build
 
 ---
 
-### Features 🥂
+## Features 
 
 A few notable elements that makes the website intuitive to use,
 | # | Feature | Screenshot |
@@ -185,7 +184,7 @@ A few notable elements that makes the website intuitive to use,
  
 --- 
 
-## Usage ✍
+## Usage 
 
 This section goes over the tweaks that need to be made, and where can they be made. It also talks about the free emailing service that is been used.
 
@@ -235,13 +234,7 @@ The **contact** section of the template makes use of this API called [emailjs](h
 
 ---
 
-## All-in-all
-
-![Portfolio Template](assets/gg.gif)
-
-
-## Contributing 🙇
-
+## Contributing 
 
 ### Option 1
   - Clone this repo to your local machine using `https://github.com/hrishikeshpaul/portfolio-template.git`
