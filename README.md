@@ -1,4 +1,4 @@
-# Portfolio Template
+<!-- # Portfolio Template
 
 This is a simple personal website template for people who want a simple personal website. This template is currently filled with my data, but one can replate it with theirs without much hastle. Furthermore, this is mobile compatible. Below I have mentioned the steps to get this on your system, and deploy it.
 
@@ -98,7 +98,7 @@ To get this deployed as a github page, follow the steps below,
 
 # Notes
 
-Please feel free to post any issue if found, or mail me at hrpaul@iu.edu.
+Please feel free to post any issue if found, or mail me at hrpaul@iu.edu. -->
 
 
 
@@ -139,12 +139,14 @@ Live [demo](https://hrishikeshpaul.github.io/).
 ## Installation
 
 ### Dependencies
+These are the local dependencies that are needed for development,
+
 - npm
 - git
 
 ### Clone
 
-> Get this repo to your local machine using,
+Get this repo to your local machine using,
 ```shell
 $ git clone https://github.com/hrishikeshpaul/portfolio-template.git
 ```
@@ -173,9 +175,6 @@ $ npm run serve
 ```shell
 $ npm run build
 ```
-
-
-- For all the possible languages that support syntax highlithing on GitHub (which is basically all of them), refer <a href="https://github.com/github/linguist/blob/master/lib/linguist/languages.yml" target="_blank">here</a>.
 
 ---
 
