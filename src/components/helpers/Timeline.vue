@@ -58,12 +58,6 @@ export default {
     font-weight: 500;
 }
 
-/* .badge:hover { 
-    transition: all 0.5s;
-    box-shadow: 2px 2px 5px rgb(179, 179, 179);
-
-} */
-
 .date {
     font-size: 14px;
     font-weight: 300;
