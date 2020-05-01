@@ -105,7 +105,7 @@ Please feel free to post any issue if found, or mail me at hrpaul@iu.edu. -->
 <!-- NEW STUFF HERE -->
 
 
-# Portfolio Template
+# Portfolio Template 🖐
 
 > This is a simple, minimal and responsive personal website template, built using vue-js, html and css.
 
@@ -120,7 +120,7 @@ Please feel free to post any issue if found, or mail me at hrpaul@iu.edu. -->
 <!-- 
 ![GIF](assets/gg.gif) -->
 
-Live [demo](https://hrishikeshpaul.github.io/).
+💻 Live [demo](https://hrishikeshpaul.github.io/)
 
 ---
 
@@ -138,20 +138,20 @@ Live [demo](https://hrishikeshpaul.github.io/).
 
 ## Installation
 
-### Dependencies
+### Dependencies 🔁
 These are the local dependencies that are needed for development,
 
 - npm
 - git
 
-### Clone
+### Clone 👯
 
 Get this repo to your local machine using,
 ```shell
 $ git clone https://github.com/hrishikeshpaul/portfolio-template.git
 ```
 
-### Setup
+### Setup ⚙
 
 To install the node packages used in the project:
 
@@ -173,7 +173,7 @@ $ npm run build
 
 ---
 
-## Features
+### Features 🥂
 
 A few notable elements that makes the website intuitive to use,
 | # | Feature | Screenshot |
@@ -184,37 +184,67 @@ A few notable elements that makes the website intuitive to use,
 | 4 | **Contact:** A contact form has been added to recieve feedback or any sort of message. This form uses an API called [emailjs](https://www.emailjs.com/). A detailed guide to set up your own emailing service is mentioned below (don't worry, it's free). All the code for the contact form can be found in `src/components/Contact.vue`| <img src="assets/contact.png" width="1400px"/> |
  
 --- 
-<!-- ## Usage (Optional)
-## Documentation (Optional)
-## Tests (Optional)
 
-- Going into more detail on code and technologies used
-- I utilized this nifty <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown Cheatsheet</a> for this sample `README`.
+## Usage ✍
 
---- -->
-<!--
-## Contributing
+This section goes over the tweaks that need to be made, and where can they be made. It also talks about the free emailing service that is been used.
 
-> To get started...
+### Information 📄
 
-### Step 1
+All the information on the template is present in `info.js` that can be found in the root director, or [here](https://github.com/hrishikeshpaul/portfolio-template/blob/master/info.js). This consists of various parameters that handle the information on the website. To add your own information, just edit the contents of this file, and the changes should be noticed. All the pictures need ot be present in `/src/assets` (or you can configure the path in the info.js file).
 
-- **Option 1**
-    - 🍴 Fork this repo!
+### Email.js 📧
 
-- **Option 2**
-    - 👯 Clone this repo to your local machine using `https://github.com/joanaz/HireDot2.git`
+The **contact** section of the template makes use of this API called [emailjs](https://www.emailjs.com/). It is a good service that provides 200 email free every month. You will need to configure your own emailjs account for the service to work.
 
-### Step 2
+#### Configuration
+1. Head over to [emailjs](https://www.emailjs.com/) and create your account.
+2. Once logged in, select a service. In my case I selected **gmail**.
+3. Head over to **Email Templates** on the side and click on **Email Template Example**. Here, there are few changes to be made if you don't want to change the template's javascript code.
+    - Change the subject attribute to: `New message from {{from_name}}!`
+    - Change the body to, 
+    ```js
+    Hello {{to_name}},
 
-- **HACK AWAY!** 🔨🔨🔨
+    You got a new message from {{from_name}}:
 
-### Step 3
+    {{{message_html}}}
 
-- 🔃 Create a new pull request using <a href="https://github.com/joanaz/HireDot2/compare/" target="_blank">`https://github.com/joanaz/HireDot2/compare/`</a>.
+    My contact is: {{user_email}}.
+    ```
+    You can configure this however you want, but the attributes in the `{{ }}` need to be those.
+4. Create a file called `config.js` in the root of the project. You'll notice that the `.gitignore` has the name of this file. This is where all the data that links your web app to emailjs will be stores.
+5. Create a object that looks like this,
+   ```js
+   let config = {
+        emailjs: {
+            serviceID: '<serviceID>',
+            templateID: '<templateID>',
+            userID: '<userID>'
+        }
+    }
+
+    export default config;
+   ```
+6. You need to get the above mentioned IDs from your emailjs account,
+   - **serviceID**: From `Email Services`
+   - **templateID**: From `Email Templates`
+   - **userID**: From `Account` > `API Keys`
+
+> Make sure your `config.js` is in `.gitignore` as you do not want to expose your keys to the public.
 
 ---
 
+## Contributing 🙇
+
+- 👯 Clone this repo to your local machine using `https://github.com/hrishikeshpaul/portfolio-template.git`
+
+- **HACK AWAY!** 🔨🔨🔨
+
+- 🔃 Create a new pull request using <a href="https://github.com/hrishikeshpaul/portfolio-template/compare/" target="_blank">`https://github.com/hrishikeshpaul/portfolio-template/compare/`</a>.
+
+---
+<!--
 ## Team
 
 > Or Contributors/People
