@@ -15,6 +15,7 @@
     "serve": "^11.3.0",
     "vue": "^2.6.11",
     "vue-agile": "^1.1.0",
+    "vue-analytics": "^5.22.1",
     "vue-cookie": "^1.1.4",
     "vue-parallax-js": "^0.2.3",
     "vueperslides": "^2.8.3"

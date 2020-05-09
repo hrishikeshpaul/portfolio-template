@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'about')" :class="{'text-light': nightMode}">about</a>
+              <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'about'); this.$ga.event('navbar', 'click', 'about', 1)" :class="{'text-light': nightMode}">about</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#" @click.prevent="$emit('scroll', 'skills')" :class="{'text-light': nightMode}">skills</a>
