@@ -15,8 +15,7 @@ let info = {
         angellist: "https://angel.co/u/hrishikesh-paul",
         resume: "https://drive.google.com/file/d/1EoRMTOOdKzXYsab2dLbCvvikoL1Aoq0U/view?usp=sharing"
     },
-    education: [
-        {
+    education: [{
             name: 'Indiana University Bloomington',
             place: 'USA',
             date: 'Aug, 2019 - May, 2021',
@@ -36,8 +35,7 @@ let info = {
         },
 
     ],
-    experience: [
-        {
+    experience: [{
             name: 'Skylark Drones',
             place: 'Bangalore, India',
             date: 'Jan, 2019 - Jun, 2021',
@@ -71,8 +69,7 @@ let info = {
         },
 
     ],
-    skills: [
-        {
+    skills: [{
             title: 'languages',
             info: ['Python', 'Java', 'Javascript', 'C', 'C++', 'SQL', 'NoSQL', 'Ruby'],
             icon: 'fa fa-code'
@@ -93,18 +90,17 @@ let info = {
             icon: 'fa fa-database'
         },
         {
-            title: 'operating systems',
-            info: ['MacOS', 'Ubuntu', 'Windows', 'Android'],
-            icon: 'fa fa-laptop'
+            title: 'operating systems & tools',
+            info: ['MacOS', 'Ubuntu', 'Windows', 'Android', 'Agile', 'Scrum', 'JIRA', 'Heroku', 'Firebase', 'AWS S3'],
+            icon: 'fas fa-tools'
         },
         {
-            title: 'tools',
-            info: ['Agile', 'Scrum', 'JIRA', 'Heroku', 'Firebase', 'AWS S3'],
-            icon: 'fas fa-tools'
+            title: 'design',
+            info: ['Illustrator', 'XD', 'Photoshop', 'Final Cut Pro'],
+            icon: 'fa fa-pencil-square-o'
         }
     ],
-    portfolio: [
-        {
+    portfolio: [{
             name: 'Sheet Recognizer',
             pictures: [
                 require('./src/assets/portfolio/msr/one.png'),
@@ -209,8 +205,7 @@ let info = {
             description: 'Nutricare is a basic health website for users(patients) to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects (patient) for a particular problem statement. Typically, a researcher will enter food item consumed by subjects over a period of time (Ex - 24hrs, or 1 week, or 1 month etc).'
         }
     ],
-    recommendations: [
-        {
+    recommendations: [{
             title: 'In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, task oriented approach, he was able to complete his assignment ahead of time.',
             author: 'Ushanas Shastri',
             position: 'CTO',
