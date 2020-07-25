@@ -70,7 +70,8 @@ export default {
       } else {
         var elementPosition = document.getElementById(ele).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
-        this.$router.push(`/${ele}`);
+        if (this.$router.history.current.path !== `/${ele}`)
+          this.$router.push(`/${ele}`);
       }
     },
   },
