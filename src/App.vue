@@ -1,6 +1,6 @@
 <template>
-  <div id="app" :class="{'text-dark': !nightMode, 'text-light': nightMode}">
-    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode"/>
+  <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
+    <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
     <div class="parent">
       <Home :nightMode="nightMode" />
       <About id="about" :nightMode="nightMode" />
@@ -14,19 +14,19 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Home from './components/Home'
-import About from './components/About'
-import Skills from './components/Skills'
-import Portfolio from './components/Portfolio'
-import Recommendation from './components/Recommendation'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
+import Navbar from "./components/Navbar.vue";
+import Home from "./components/Home";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Portfolio from "./components/Portfolio";
+import Recommendation from "./components/Recommendation";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
-import info from '../info'
+import info from "../info";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Navbar,
     Home,
@@ -35,49 +35,57 @@ export default {
     Portfolio,
     Recommendation,
     Contact,
-    Footer
+    Footer,
   },
-  data () {
+  data() {
     return {
       nightMode: false,
       config: info.config,
-    }
+    };
   },
   created() {
     if (this.config.use_cookies) {
-      this.nightMode = this.$cookie.get('nightMode') === 'true' ? true : false
+      this.nightMode = this.$cookie.get("nightMode") === "true" ? true : false;
     }
+  },
+  mounted() {
+    ["about", "contact", "skills", "portfolio"].forEach((l) => {
+      if (window.location.href.includes(l)) {
+        var elementPosition = document.getElementById(l).offsetTop;
+        window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
+      }
+    });
   },
   methods: {
     switchMode(mode) {
       if (this.config.use_cookies) {
-        this.$cookie.set('nightMode', mode);
+        this.$cookie.set("nightMode", mode);
       }
-      this.nightMode = mode
+      this.nightMode = mode;
     },
     scrollTo(ele) {
-      if (ele== 'home') {
-        window.scrollTo({top: -80, behavior: 'smooth'});
+      if (ele == "home") {
+        window.scrollTo({ top: -80, behavior: "smooth" });
       } else {
         var elementPosition = document.getElementById(ele).offsetTop;
-        window.scrollTo({top: elementPosition - 35, behavior: 'smooth'});
-        this.$router.push()
+        window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
+        this.$router.push(`/${ele}`);
       }
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   width: 100%;
 }
 
-@media screen and (max-width: 580px){
+@media screen and (max-width: 580px) {
   #app {
     width: fit-content;
   }
@@ -90,11 +98,11 @@ export default {
 }
 
 .pgray {
-  color: #535a5e
+  color: #535a5e;
 }
 
 .pblue {
-   color: #669DB3FF
+  color: #669db3ff;
 }
 
 .bg-dark2 {
@@ -106,6 +114,6 @@ export default {
 }
 
 .p-st {
-    transition: all 0.5s !important;
+  transition: all 0.5s !important;
 }
 </style>

@@ -26,7 +26,7 @@
       />
 
       <vue-tabs :activeTextColor="!nightMode ? '#535A5E' : '#dfdfdf'">
-        <v-tab title="development" class>
+        <v-tab title="development">
           <br />
           <div class="row">
             <div
@@ -179,6 +179,9 @@ export default {
     },
   },
   methods: {
+    sayHi() {
+      console.log('hi')
+    },
     next() {
       this.$refs.flickity.next();
     },
@@ -315,11 +318,9 @@ export default {
 
 /deep/ .vue-tabs .nav-tabs > li > a:after {
   content: "";
-
-  width: 50%;
+  width: 20%;
   position: absolute;
   bottom: 3px;
-
   border-width: 0 0 2px;
   border-style: solid;
   transition: all 0.5s;
