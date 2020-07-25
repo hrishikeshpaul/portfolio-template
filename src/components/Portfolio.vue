@@ -54,7 +54,7 @@
           </div>
         </v-tab>
 
-        <v-tab title="design" href="//porfolio/design">
+        <v-tab title="design">
           <div class="row">
             <div
               v-for="(design, idx) in desgin_info"
