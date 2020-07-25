@@ -103,10 +103,18 @@ let info = {
     portfolio: [{
             name: 'Sheet Recognizer',
             pictures: [
-                require('./src/assets/portfolio/msr/one.png'),
-                require('./src/assets/portfolio/msr/two.png'),
-                require('./src/assets/portfolio/msr/three.png'),
-                require('./src/assets/portfolio/msr/four.png'),
+                {
+                    img:  require('./src/assets/portfolio/msr/one.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/msr/two.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/msr/three.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/msr/four.png'),
+                }
             ],
             technologies: ['Computer Vision', 'OpenCV', 'AI', 'Flask', 'Sockets'],
             category: 'Algorithm',
@@ -118,11 +126,21 @@ let info = {
         {
             name: 'NoQ Job Portal',
             pictures: [
-                require('./src/assets/portfolio/noq/logo.png'),
-                require('./src/assets/portfolio/noq/one.png'),
-                require('./src/assets/portfolio/noq/two.png'),
-                require('./src/assets/portfolio/noq/three.png'),
-                require('./src/assets/portfolio/noq/four.png'),
+                {
+                    img:  require('./src/assets/portfolio/noq/logo.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/noq/one.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/noq/two.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/noq/three.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/noq/four.png'),
+                }
             ],
             technologies: ['Node', 'Vue', 'Express', 'MongoDB', 'Heroku'],
             category: 'Website',
@@ -134,8 +152,12 @@ let info = {
         {
             name: 'POST',
             pictures: [
-                require('./src/assets/portfolio/post/one.png'),
-                require('./src/assets/portfolio/post/two.png'),
+                {
+                    img: require('./src/assets/portfolio/post/one.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/post/two.png'),
+                }
             ],
             technologies: ['Markov Models', 'Python', 'Artificial Intelligence', 'Vue', 'Heroku'],
             category: 'Algorithm',
@@ -147,8 +169,12 @@ let info = {
         {
             name: 'Suicide Analyzer',
             pictures: [
-                require('./src/assets/portfolio/suicide/suicide-analyzer.png'),
-                require('./src/assets/portfolio/suicide/suicide2-original.png')
+                {
+                    img: require('./src/assets/portfolio/suicide/suicide-analyzer.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/suicide/suicide2-original.png')
+                }
             ],
             technologies: ['Node', 'Angular', 'Express', 'Leaflet', 'Pandas'],
             category: 'Website',
@@ -160,11 +186,18 @@ let info = {
         {
             name: 'Sentiment Analyzer',
             pictures: [
-
-                require('./src/assets/portfolio/smit/one.png'),
-                require('./src/assets/portfolio/smit/two.png'),
-                require('./src/assets/portfolio/smit/three.png'),
-                require('./src/assets/portfolio/smit/four.png'),
+                {
+                    img: require('./src/assets/portfolio/smit/one.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/smit/two.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/smit/three.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/smit/four.png'),
+                }
             ],
             technologies: ['LSTM', 'Keras', 'Angular', 'Tweepy', 'Heroku', 'Python'],
             category: 'Alogrithm',
@@ -176,9 +209,15 @@ let info = {
         {
             name: 'Clumpr',
             pictures: [
-                require('./src/assets/portfolio/clumpr/logo.png'),
-                require('./src/assets/portfolio/clumpr/one.png'),
-                require('./src/assets/portfolio/clumpr/two.png'),
+                {
+                    img: require('./src/assets/portfolio/clumpr/logo.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/clumpr/one.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/clumpr/two.png'),
+                }
             ],
             technologies: ['Node', 'Angular', 'Express', 'MySQL', 'Facebook API'],
             category: 'Web App',
@@ -190,12 +229,24 @@ let info = {
         {
             name: 'Nutricare',
             pictures: [
-                require('./src/assets/portfolio/nc/one.png'),
-                require('./src/assets/portfolio/nc/two.png'),
-                require('./src/assets/portfolio/nc/three.png'),
-                require('./src/assets/portfolio/nc/four.png'),
-                require('./src/assets/portfolio/nc/five.png'),
-                require('./src/assets/portfolio/nc/six.png'),
+                {
+                    img: require('./src/assets/portfolio/nc/one.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/nc/two.png'),
+                },
+                {
+                    img:  require('./src/assets/portfolio/nc/three.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/nc/four.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/nc/five.png'),
+                },
+                {
+                    img: require('./src/assets/portfolio/nc/six.png'),
+                }
             ],
             technologies: ['Node', 'Angular', 'Express', 'MongDB', 'Medical'],
             category: 'Website',
@@ -203,6 +254,93 @@ let info = {
             date: 'May, 2017 - Aug, 2017',
             visit: 'https://angel.co/projects/576300-nutricare',
             description: 'Nutricare is a basic health website for users(patients) to input nutrient intake data and researchers to analyse the data with the help of graphs and tables. A researcher can conduct studies on N different subjects (patient) for a particular problem statement. Typically, a researcher will enter food item consumed by subjects over a period of time (Ex - 24hrs, or 1 week, or 1 month etc).'
+        },
+
+    ],
+    portfolio_design: [{
+            name: 'Guituna',
+            title: 'Guituna - Mockup Design',
+            pictures: [
+                {
+                    img: require('./src/assets/designs/coursera1/MoodBoard.png'),
+                    title: "MoodBoard"
+                },
+                {
+                    img: require('./src/assets/designs/coursera1/Mockups 1.png'),
+                    title: "Mockups 1"
+                },
+                {
+                    img: require('./src/assets/designs/coursera1/Mockups 2.png'),
+                    title: "Mockups 2"
+                },
+                {
+                    img: require('./src/assets/designs/coursera1/App Elements.png'),
+                    title: 'App Elements'
+                }
+            ],
+            technologies: ['XD', 'Illustrator'],
+            category: 'Visual Design',
+            github: '',
+            date: 'May, 2020 - Jun, 2020',
+            visit: '',
+            description: 'Mockups of a concept of a Guitar Tuner App for the Visual Elements Coursera Specialization.'
+        },
+        {
+            name: 'Pantree',
+            title: 'Pantree - Mockup Design',
+            pictures: [{
+                    img: require('./src/assets/designs/pantree/MoodBoard.png'),
+                    title: 'Moodboard'
+                },
+                {
+                    img: require('./src/assets/designs/pantree/1.png'),
+                    title: 'Mockups 1'
+                }, {
+                    img: require('./src/assets/designs/pantree/2.png'),
+                    title: 'Mockups 2'
+                }
+            ],
+            technologies: ['XD', 'Illustrator'],
+            category: 'Visual Design',
+            github: '',
+            date: 'May, 2020 - July, 2020',
+            visit: '',
+            description: 'Mockups of a recipe scraping application, Pantree, that recommends recipes based on the items present in your pantree.'
+        },
+        {
+            name: 'Bunder',
+            title: 'Bunder - MVP Proposal',
+            pictures: [{
+                    img: require('./src/assets/designs/bunder/Moodboard.png'),
+                    title: 'Moodboard'
+                },
+                {
+                    img: require('./src/assets/designs/bunder/Mockup 1.png'),
+                    title: 'Mockup 1'
+                },
+                {
+                    img: require('./src/assets/designs/bunder/Mockup 2.png'),
+                    title: 'Mockup 2'
+                },
+                {
+                    img: require('./src/assets/designs/bunder/Mockup 3.png'),
+                    title: 'Mockup 3'
+                },
+                {
+                    img: require('./src/assets/designs/bunder/Market Research 1.png'),
+                    title: 'Market Research 1'
+                }, 
+                {
+                    img: require('./src/assets/designs/bunder/Market Research 2.png'),
+                    title: 'Market Research 2'
+                }
+            ],
+            technologies: ['XD', 'Illustrator'],
+            category: 'Visual Design',
+            github: '',
+            date: 'May, 2020 - July, 2020',
+            visit: '',
+            description: 'Bunder is an intuitive web platform for micro-communities to share sensitive data with privacy within the community and allow engagement amongst them. Our aim is two-fold - Co-existing and Collaboration. The former is executed by providing a platform for communities that are geographically positioned in the same proximity (Housing societies, Dorms, Apartment Complexes) to have and share data (exact apartment addresses, phone number, apartment housing rules, individuals tested positive for COVID-19) in an exclusive platform. The latter is to give these people in the community the ability to carry out a task you are physically or remotely unable to do; with dignity and ease.'
         }
     ],
     recommendations: [{

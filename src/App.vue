@@ -40,7 +40,7 @@ export default {
   data () {
     return {
       nightMode: false,
-      config: info.config
+      config: info.config,
     }
   },
   created() {
@@ -61,6 +61,7 @@ export default {
       } else {
         var elementPosition = document.getElementById(ele).offsetTop;
         window.scrollTo({top: elementPosition - 35, behavior: 'smooth'});
+        this.$router.push()
       }
     }
   }
