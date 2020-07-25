@@ -1,32 +1,40 @@
 <template>
-    <div style="overflow: auto;">
-        <div class="prow"> 
-            <div class="pcolumn" v-for="i in images" :key="i.title" :class='{"flex": design ? "100%" : "50%", "-ms-flex": design ? "100%" : "50%", "max-width": design ? "100%" : "50%"}'>
-                <img :src="i.img" style="width:100%">
-                <div class="mt-1">
-                  <p style="font-weight: 500">{{i.title}}</p>
-                </div>
-            </div>
+  <div style="overflow: auto;">
+    <div class="prow">
+      <div
+        class="pcolumn"
+        v-for="i in images"
+        :key="i.title"
+        :class="{
+          flex: design ? '100%' : '50%',
+          '-ms-flex': design ? '100%' : '50%',
+          'max-width': design ? '100%' : '50%',
+        }"
+      >
+        <img :src="i.img" style="width:100%" />
+        <div class="mt-1">
+          <p style="font-weight: 500">{{ i.title }}</p>
         </div>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Gallery',
-    props: {
-        images: {
-            type: Array
-        },
-        design: {
-            type: Boolean
-        }
-    }
-}
+  name: "Gallery",
+  props: {
+    images: {
+      type: Array,
+    },
+    design: {
+      type: Boolean,
+    },
+  },
+};
 </script>
 
 <style scoped>
-
 .prow {
   display: -ms-flexbox; /* IE10 */
   display: flex;

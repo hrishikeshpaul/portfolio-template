@@ -1,18 +1,18 @@
 <template>
   <div>
-    <!-- <div class="carousel">
-            <div class="slides">
-                <img :src="image"  v-for="image in images" :key="image" alt="slide image" class="slide">
-            </div>
-            <div class="controls">
-                <div class="control prev-slide">&#9668;</div>
-                <div class="control next-slide">&#9658;</div>
-            </div>
-    </div>-->
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"  style="height: 200px;">
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+      style="height: 200px;"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active" v-for="image in images" :key="image">
-          <img class="d-block w-100" src="https://picsum.photos/id/237/200/300" alt="Second slide"/>
+          <img
+            class="d-block w-100"
+            src="https://picsum.photos/id/237/200/300"
+            alt="Second slide"
+          />
         </div>
       </div>
       <a
@@ -42,15 +42,14 @@ export default {
   name: "Carousel",
   props: {
     images: {
-      type: Array
+      type: Array,
     },
     name: {
-      type: String
-    }
+      type: String,
+    },
   },
-  mounted() {}
+  mounted() {},
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

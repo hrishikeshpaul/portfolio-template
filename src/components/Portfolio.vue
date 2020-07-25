@@ -59,7 +59,7 @@
             <div
               v-for="(design, idx) in desgin_info"
               :key="idx"
-              :class='{"mt-4": idx === 0 ? true : true}'
+              :class="{ 'mt-4': idx === 0 ? true : true }"
               class="col-xl-6 col-bg-6 col-md-12 col-sm-12"
               style="position: relative;"
             >
@@ -69,7 +69,6 @@
                 :bullets="false"
                 slide-content-outside="bottom"
                 style="position: aboslute"
-                
               >
                 <vueper-slide
                   v-for="(slide, i) in design.pictures"
@@ -180,7 +179,7 @@ export default {
   },
   methods: {
     sayHi() {
-      console.log('hi')
+      console.log("hi");
     },
     next() {
       this.$refs.flickity.next();

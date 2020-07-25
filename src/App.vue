@@ -65,7 +65,7 @@ export default {
     },
     scrollTo(ele) {
       if (ele == "home") {
-         this.$router.push(`/`);
+        this.$router.push(`/`);
         window.scrollTo({ top: -80, behavior: "smooth" });
       } else {
         var elementPosition = document.getElementById(ele).offsetTop;
@@ -126,21 +126,21 @@ export default {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #f1f1f1;
   border-radius: 9px;
-  border: 2px solid white;  /* Use your background color instead of White */
+  border: 2px solid white; /* Use your background color instead of White */
   background-clip: content-box;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 9px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .tooltip {
@@ -231,22 +231,22 @@ export default {
   color: black;
   padding: 24px;
   border-radius: 5px;
-  box-shadow: 0 5px 30px rgba(black, .1);
+  box-shadow: 0 5px 30px rgba(black, 0.1);
 }
 
 .tooltip.popover .popover-arrow {
   border-color: #f9f9f9;
 }
 
-.tooltip[aria-hidden='true'] {
+.tooltip[aria-hidden="true"] {
   visibility: hidden;
   opacity: 0;
-  transition: opacity .5s, visibility .5s;
+  transition: opacity 0.5s, visibility 0.5s;
 }
 
-.tooltip[aria-hidden='false'] {
+.tooltip[aria-hidden="false"] {
   visibility: visible;
   opacity: 1;
-  transition: opacity .5s;
+  transition: opacity 0.5s;
 }
 </style>
