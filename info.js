@@ -22,7 +22,7 @@ let info = {
             degree: 'Masters in Computer Science',
             gpa: '3.7/4.0',
             description: 'Currently pursuing my Master\'s in Computer Science, while specializing in the field of Artificial Intelligence and Machine Learning.',
-            skills: ['Artificial Intelligence', 'Software Engineering', 'Computer Vision', 'Music Data Mining']
+            skills: ['Artificial Intelligence', 'Software Engineering', 'Algorithms', 'Computer Vision', 'Music Data Mining', , 'OS']
         },
         {
             name: 'Manipal Institute of Technology',
