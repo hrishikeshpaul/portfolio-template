@@ -120,6 +120,7 @@ export default {
     border-radius: 7px;
     padding: 10px;
     width: 50%;
+    transition: all 1s;
 }
 
 .btn {

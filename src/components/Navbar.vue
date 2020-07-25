@@ -24,7 +24,7 @@
               <a class="nav-link" href="/contact" @click.prevent="$emit('scroll', 'contact')" :class="{'text-light': nightMode}">contact</a>
             </li>
             <li class="nav-item ml-2">
-              <a class="nav-link" href="#" @click.prevent="switchMode" :class="{'text-light': nightMode}"><i :class='{"fas fa-moon": nightMode, "far fa-moon": !nightMode}'></i></a>
+              <a class="nav-link" href="#" @click.prevent="switchMode" :class="{'text-light': nightMode}"><i :class='{"fas fa-moon": nightMode, "far fa-moon": !nightMode}' v-tooltip.bottom="nightMode ? 'Light Mode' : 'Night Mode'"></i></a>
             </li>
           </ul>
         </div>
