@@ -283,7 +283,7 @@ let info = {
             github: '',
             date: 'May, 2020 - Jun, 2020',
             visit: '',
-            description: 'Mockups of a concept of a Guitar Tuner App for the Visual Elements Coursera Specialization.'
+            description: 'Guituna is a simple, lightweight and intuitive guitar tuner, that provides different modes of guitars based on your usage. You can either select a specific string to tune, or free tune your guitar based on the frequency shown on the meter. Guituna also provides a handful of different tunings to help explore various tuning paradigms. There is also an array of settings that can be configured to your liking based on the devices you\'re using. <br/><br/>The interface aims to highlight the use of a minimal design and providing just enough controls to make for a great tuner, while exposing various possibilities of guitarists to explore.'
         },
         {
             name: 'Pantree',
@@ -305,7 +305,7 @@ let info = {
             github: '',
             date: 'May, 2020 - July, 2020',
             visit: '',
-            description: 'Mockups of a recipe scraping application, Pantree, that recommends recipes based on the items present in your pantree.'
+            description: 'Pantree is a recipiece finding and recommending application. It is often the case that you have run to your closest grocery store just to pick up one item that is missing in your kitchen. Pantree keeps a track of all your ingredients, and suggests recipes based on your meal preferences and past recipes. <br/><br/> The goal of the interface is to keep it similar to various recipe/food apps to reduce the learning required by the user, but also provide a smooth interface for users to seemlessly browse through recipes and ingredients.'
         },
         {
             name: 'Bunder',
