@@ -69,6 +69,8 @@
                 :bullets="false"
                 slide-content-outside="bottom"
                 style="position: aboslute"
+                  @click.prevent="showDesignModalFn(design)"
+
               >
                 <vueper-slide
                   v-for="(slide, i) in design.pictures"
@@ -78,11 +80,23 @@
               </vueper-slides>
               <div
                 style="width: 100%; display: flex; justify-content: space-between"
-                class="mt-3"
+                class="mt-2"
               >
-                <div class="title2">{{ design.title }}</div>
+                <div>
+                  <div class="title2" style="font-weight: 500;">{{ design.title }}</div>
+                  <span
+                    class="badge mr-2 mb-2"
+                    v-for="tech in design.technologies"
+                    :key="tech"
+                    :class="{ 'bg-dark4': nightMode }"
+                    >{{ tech }}</span
+                  >
+                  •
+                  <span class="date ml-1">{{design.date}}</span>
+                </div>
+
                 <button
-                  href=""
+                  style="height: 31px; margin-top: 5px;"
                   class="btn-sm btn btn-outline-secondary no-outline"
                   @click.prevent="showDesignModalFn(design)"
                 >
@@ -178,9 +192,6 @@ export default {
     },
   },
   methods: {
-    sayHi() {
-      console.log("hi");
-    },
     next() {
       this.$refs.flickity.next();
     },
@@ -385,5 +396,27 @@ export default {
   background-color: #669db3ff;
   border-color: #669db3ff;
   color: white;
+}
+/deep/ .vueperslides__arrow {
+  outline: none !important;
+  border: none;
+  color: grey;
+}
+
+.badge {
+  background-color: rgb(211, 227, 233);
+  transition: all 0.5s;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.bg-dark4 {
+  background-color: #494e55 !important;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.75
 }
 </style>

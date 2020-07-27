@@ -35,7 +35,6 @@
                 : portfolio.description
             "
           >
-            {{}}
           </p>
         </div>
         <div class="text-center mt-2">
@@ -107,8 +106,8 @@ img {
 }
 
 .pheight {
-  height: 105px;
-  max-height: 120px;
+  height: 110px;
+  max-height: 130px;
   overflow: auto;
   text-align: justify;
 }
