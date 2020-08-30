@@ -80,8 +80,7 @@ export default {
       name: info.name,
       linkedin: info.links.linkedin,
       github: info.links.github,
-      angellist: info.links.angellist,
-      resume: info.links.resume,
+      angellist: info.links.angellist
     };
   },
   methods: {
@@ -97,7 +96,7 @@ export default {
           window.open(this.angellist, "_blank");
           break;
         case "resume":
-          window.open(this.resume, "_blank");
+          window.open('./src/assets/pdfs/Resume.pdf', "_blank");
           break;
       }
     },

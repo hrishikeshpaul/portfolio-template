@@ -13,7 +13,8 @@ let info = {
         linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
         github: "https://github.com/hrishikeshpaul",
         angellist: "https://angel.co/u/hrishikesh-paul",
-        resume: "https://drive.google.com/file/d/1uhexasJsa_7s_jEDtRe07bC52p2QEZa5/view"
+        // resume:  require('./src/assets/pdfs/Resume.pdf')
+        // resume: "https://drive.google.com/file/d/1uhexasJsa_7s_jEDtRe07bC52p2QEZa5/view"
     },
     education: [{
             name: 'Indiana University Bloomington',
