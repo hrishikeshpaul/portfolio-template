@@ -8,12 +8,12 @@ let info = {
             blur: false
         }
     },
-    description: 'I\'m Hrishikesh Paul, a technology enthusiast currently pursuing my Master\'s in Computer Science at Indiana University Bloomington. Majority of my work consists of web and software development, but lately I have been spending time in the field of Artificial Intelligence, Computer Vision and UX Design. While being away form my work desk, I love being outdoors playing soccer. Music production, cooking, videography and photography are some of my favourite hobbies!',
+    description: 'A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ',
     links: {
         linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
         github: "https://github.com/hrishikeshpaul",
         angellist: "https://angel.co/u/hrishikesh-paul",
-        resume: "https://drive.google.com/file/d/1EoRMTOOdKzXYsab2dLbCvvikoL1Aoq0U/view?usp=sharing"
+        resume: "https://drive.google.com/file/d/1uhexasJsa_7s_jEDtRe07bC52p2QEZa5/view"
     },
     education: [{
             name: 'Indiana University Bloomington',
@@ -35,7 +35,16 @@ let info = {
         },
 
     ],
-    experience: [{
+    experience: [
+        {
+            name: 'Cyberinfrastructure for Network Science Center',
+            place: 'Bloomington, Indiana',
+            date: 'Jun, 2020 - Present',
+            position: 'Research Assistant; Full Stack Developer',
+            description: 'Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.',
+            skills: ['Angular', 'Node.js', 'Vega', 'Shell', 'Typescript']
+        },
+        {
             name: 'Skylark Drones',
             place: 'Bangalore, India',
             date: 'Jan, 2019 - Jun, 2021',
@@ -71,7 +80,7 @@ let info = {
     ],
     skills: [{
             title: 'languages',
-            info: ['Python', 'Java', 'Javascript', 'C', 'C++', 'SQL', 'NoSQL', 'Ruby'],
+            info: ['Python', 'Javascript', 'TypeScript', 'Java', 'C', 'C++', 'SQL', 'NoSQL', 'Ruby'],
             icon: 'fa fa-code'
         },
         {
@@ -81,7 +90,7 @@ let info = {
         },
         {
             title: 'web technologies',
-            info: ['Vue', 'React', 'Angular', 'Node', 'Flask', 'HTML', 'CSS'],
+            info: ['Vue', 'Angular', 'React', 'Node', 'Flask', 'HTML', 'CSS'],
             icon: 'fas fa-laptop-code'
         },
         {

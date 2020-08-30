@@ -112,7 +112,8 @@ export default {
 }
 
 img {
-  max-width: 260px;
+  max-width: 300px;
+  margin-top: 60px;
   transform: rotateY(180deg);
 }
 
