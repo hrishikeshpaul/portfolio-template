@@ -1,36 +1,39 @@
 {
-    "name": "hrpaul-portfolio",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
-    },
-    "dependencies": {
-        "@chenfengyuan/vue-carousel": "^1.0.5",
-        "aos": "^3.0.0-beta.6",
-        "babel-helper-vue-jsx-merge-props": "^2.0.3",
-        "core-js": "^3.6.4",
-        "emailjs-com": "^2.4.1",
-        "material-icons": "^0.3.1",
-        "serve": "^11.3.0",
-        "v-tooltip": "^2.0.3",
-        "vue": "^2.6.11",
-        "vue-cookie": "^1.1.4",
-        "vue-nav-tabs": "^0.5.7",
-        "vue-parallax-js": "^0.2.3",
-        "vue-router": "^3.3.4",
-        "vue-scrollto": "^2.18.1",
-        "vueperslides": "^2.10.2"
-    },
-    "devDependencies": {
-        "@vue/cli-plugin-babel": "~4.3.0",
-        "@vue/cli-plugin-eslint": "~4.3.0",
-        "@vue/cli-service": "~4.3.0",
-        "babel-eslint": "^10.1.0",
-        "eslint": "^6.7.2",
-        "eslint-plugin-vue": "^6.2.2",
-        "vue-template-compiler": "^2.6.11"
-    }
+  "name": "hrpaul",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-carousel": "^1.0.5",
+    "aos": "^3.0.0-beta.6",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "core-js": "^3.6.4",
+    "emailjs-com": "^2.4.1",
+    "material-icons": "^0.3.1",
+    "serve": "^11.3.0",
+    "v-tooltip": "^2.0.3",
+    "vue": "^2.6.11",
+    "vue-cookie": "^1.1.4",
+    "vue-nav-tabs": "^0.5.7",
+    "vue-parallax-js": "^0.2.3",
+    "vue-router": "^3.3.4",
+    "vue-scrollto": "^2.18.1",
+    "vue-selector": "0.0.1",
+    "vueperslides": "^2.10.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.3.0",
+    "@vue/cli-plugin-eslint": "~4.3.0",
+    "@vue/cli-service": "~4.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "keywords": [],
+  "description": ""
 }
