@@ -1,7 +1,7 @@
 let info = {
-  name: "Hrishikesh Paul",
-  logo_name: "paul",
-  flat_picture: require("./src/assets/potrait.jpg"),
+  name: "Mohamad Al Mdfaa",
+  logo_name: "ML Eng",
+  flat_picture: require("./src/assets/portrait.png"),
   config: {
     use_cookies: true,
     navbar: {
@@ -9,97 +9,114 @@ let info = {
     }
   },
   description:
-    "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
+    "Experienced Machine Learning Engineer and a Ph.D. candidate specializing in Computer Vision and Visual SLAM. With a strong background in Python, C++, cloud services, and building end-to-end ML systems. Over the course of my career, I have developed a proven track record of working effectively with teams to deliver innovative and impactful projects. I am skilled at building strong relationships with stakeholders and ensuring that my work meets their needs. I am also passionate about using machine learning to solve real-world problems.",
   links: {
-    linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
-    github: "https://github.com/hrishikeshpaul",
-    angellist: "https://angel.co/u/hrishikesh-paul",
+    linkedin: "http://www.linkedin.com/in/mohamad-al-mdfaa",
+    github: "https://github.com/mhd-medfa",
     resume:
       "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
   },
   education: [
     {
-      name: "Indiana University Bloomington",
-      place: "USA",
-      date: "Aug, 2019 - May, 2021",
-      degree: "Masters in Computer Science",
-      gpa: "3.7/4.0",
+      name: "Skoltech University",
+      date: "2022 – Present",
+      degree: "Ph.D. in Computer Vision and Visual SLAM",
       description:
-        "Currently pursuing my Master's in Computer Science, while specializing in the field of Artificial Intelligence and Machine Learning.",
+        "Currently pursuing my Ph.D. in Mathematical Modeling, Numerical Methods and Software, while specializing in the field of Computer Vision and Visual SLAM.",
       skills: [
         "Artificial Intelligence",
-        "Software Engineering",
-        "Algorithms",
         "Computer Vision",
-        "Music Data Mining",
-        ,
-        "OS"
+        "Multimodal Deep Learning",
+        "Perception",
+        "Visual SLAM",
+        "VLM (Vision-Language Models)"
       ]
     },
     {
-      name: "Manipal Institute of Technology",
-      place: "India",
-      date: "Aug, 2015 - July, 2019",
-      degree: "Bachelors in Computer and Communication",
-      gpa: "8.0/10.0",
+      name: "Innopolis University",
+      date: "2020 – 2022",
+      degree: "Master’s degree in Robotics & Computer Vision",
+      gpa: "4.83/5",
       description:
-        "Graduated from Manipal Institute of Technology, Manipal with a bachelors degree in Computer and Communications Engineering.",
+        "Graduated with honor.",
       skills: [
         "AI",
-        "Neural Netwroks",
-        "Data Mining",
+        "Robotics",
         "Computer Vision",
-        "Pattern Recognition",
-        "HCI",
+        "Natural Language Processing",
         "Software Engineering"
+      ]
+    },
+    {
+      name: "Damascus University",
+      date: "2012 – 2017",
+      degree: "Bachelor’s degree in Computer & Automation Engineering",
+      skills: [
+        "Computer Engineering",
+        "Neural Networks",
+        "Pattern Recognition",
+        "Control Theory",
+        "Electrical Engineering"
       ]
     }
   ],
   experience: [
     {
-      name: "Cyberinfrastructure for Network Science Center",
-      place: "Bloomington, Indiana",
-      date: "Jun, 2020 - Present",
-      position: "Research Assistant; Full Stack Developer",
-      description:
-        "Worked as a Software Developer for the Human BioMolecular Atlas Program (funded by the NIH), building innovative visualization tools to envision large biomedical datasets.",
-      skills: ["Angular", "Node.js", "Vega", "Shell", "Typescript"]
+      name: "Tradinos",
+      place: "Berlin, Germany",
+      date: "Oct, 2023 - Present",
+      position: "AI consultant",
+      skills: ["LLM", "RAG (Retreival Augmented Generation)", "Deep Learning", "Machine Learning", "Python", "Vector DB"]
     },
     {
-      name: "Skylark Drones",
-      place: "Bangalore, India",
-      date: "Jan, 2019 - Jun, 2021",
-      position: "Full Stack Web Developer",
+      name: "Mobile Robotics Lab @ Skoltech",
+      date: "Dec, 2022 - Present",
+      position: "Deep learning research intern",
       description:
-        "Worked as a full stack web developer, implementing various features and fixing bugs for Skylark Drones’ central management system called Operations Portal and Data Mining Server.",
-      skills: ["MongoDB", "Flask", "VueJS", "NGINX"]
+        "Contributing to Visual SLAM projects, utilizing techniques such as VLM, Panoptic Segmentation, Keypoint Extraction, Image Retrieval, and IMU Integration.",
+      skills: ["Perception", "Computer Vision", "Deep Learning", "ROS", "Python", "C++", "Docker"]
     },
     {
-      name: "Hridayam Soft Solutions",
-      place: "Mumbai, India",
-      date: "May, 2018 - Jun, 2018",
-      position: "Computer Vision Engineer",
+      name: "Innopolis University",
+      date: "Jan, 2022 - Dec, 2022",
+      position: "Teaching assistant",
       description:
-        "Scripted an algorithm for extracting information (such as date, invoice number etc.) from scanned images of invoices, built a web interface for using the former mentioned machine.",
-      skills: ["Python", "OpenCV", "PyTesseract", "AngularJS", "NodeJS"]
+        "Assisted in delivering Reinforcement Learning, Software System Analysis and Design, Software Project and Agile Development courses for graduate and undergraduate students.",
+      skills: ["Reinforcement Learning", "Software Design", "Software Engineering", "Python", "C++"]
     },
     {
-      name: "Elementail Labs",
-      place: "Mumbai, India",
-      date: "May, 2017 - July, 2017",
-      position: "Full Stack Web Developer",
+      name: "WeStart",
+      place: "Berkeley, USA",
+      date: "Nov, 2021 - Jan, 2022",
+      position: "AI engineer (Contract)",
       description:
-        "Implemented various contracts and deployed them on the upcoming blockchain technology - Ethereum, while also working as a MEAN stack web developer for Elemential Labs’ website.",
-      skills: ["MongoDB", "AngularJS", "NodeJS", "ExpressJS"]
+        "Utilized Artificial Intelligence and Deep Learning expertise to support company projects. Worked on RSS-Feed Classification, using BART-based models for summarization and classification, deployed on AWS. Established Reinforcement Learning and A/B testing pipeline for recommender system's profile matching.",
+      skills: ["NLP", "Deep Learning", "Reinforcement Learning", "Python", "AWS"]
     },
     {
-      name: "Viteos Capital Market Services s",
-      place: "Mumbai, India",
-      date: "May, 2016 - July, 2016",
-      position: "Software Developer",
+      name: "BeeOrder",
+      date: "Feb, 2021 - Jan, 2022",
+      position: "Lead AI engineer",
       description:
-        "Evaluated technologies, and building proof of concept/prototype solutions for trade processing and mathematical model based evaluations, while working in the software development team.",
-      skills: ["C#", "C++", "Visual Studio"]
+        "Led the design and implementation of an AI system, optimizing dispatch operations by accurately estimating delivery times from restaurants. Engineered algorithms to match optimal drivers with client orders, while enhancing restaurant sorting based on performance. Additionally, maintained and improved the Auto Dispatcher System for route optimization, significantly enhancing delivery efficiency.",
+      skills: ["AI", "MySQL", "Redis","Python", "Scrum"]
+    },
+    {
+      name: "L-One Systems GmbH",
+      place: "Darmstadt, Germany",
+      date: "April, 2019 - Aug, 2020",
+      position: "ML engineer",
+      description:
+        "Created a pipeline using encoder-decoder and multi-scale CNN to convert RGB images into Hyperspectral ones for Plant Nutrient Detection (PND). Designed an image analysis system utilizing CNNs and classical machine learning models like SVM, Random Forest, and Gradient Boosting to accurately identify and quantify plant nutrient status. Improved Field Boundary Detection by implementing instance segmentation and image processing techniques for enhanced model performance. Successfully deployed the system in production using AWS infrastructure and managed satellite data processing.",
+      skills: ["Machin Learning", "Deep Learning", "Computer Vision","Research", "Python", "AWS"]
+    },
+    {
+      name: "JoyBox",
+      date: "April, 2019 - Aug, 2020",
+      position: "AI developer",
+      description:
+        "Contributed to an AI virtual assistant for the visually impaired, utilizing speech-to-text and computer vision APIs to streamline daily routines. Contributed to an internal Motion Capture project for Cartoon production.",
+      skills: ["Python", "C#", "Swift", "Unity", "Kinect"]
     }
   ],
   skills: [
@@ -107,66 +124,50 @@ let info = {
       title: "languages",
       info: [
         "Python",
-        "Javascript",
-        "TypeScript",
-        "Java",
-        "C",
         "C++",
         "SQL",
-        "NoSQL",
-        "Ruby"
       ],
       icon: "fa fa-code"
     },
     {
       title: "data frameworks",
       info: [
-        "Keras",
+        "Pytorch",
         "Numpy",
         "Pandas",
         "OpenCV",
-        "SciPy",
         "Sklearn",
-        "LibROSA",
-        "Pillow"
+        "Pillow",
+        "Open3D"
       ],
       icon: "fa fa-cubes"
     },
     {
       title: "web technologies",
-      info: ["Vue", "Angular", "React", "Node", "Flask", "HTML", "CSS"],
+      info: ["Flask", "FastAPI"],
       icon: "fas fa-laptop-code"
     },
     {
       title: "databases",
-      info: ["MongoDB", "MySQL", "OracleSQL", "Neo4j"],
+      info: ["MySQL", "PostgreSQL", "Redis", "Weaviate"],
       icon: "fa fa-database"
     },
     {
       title: "operating systems & tools",
       info: [
+        "Linux",
         "MacOS",
-        "Ubuntu",
         "Windows",
-        "Android",
         "Agile",
         "Scrum",
-        "JIRA",
-        "Heroku",
-        "Firebase",
-        "AWS S3"
+        "AWS (SageMaker, Lambda, EC2, S3, Fargate, AppRunner)"
       ],
       icon: "fas fa-tools"
     },
-    {
-      title: "design",
-      info: ["Illustrator", "XD", "Photoshop", "Final Cut Pro"],
-      icon: "fa fa-pencil-square-o"
-    }
   ],
   portfolio: [
     {
-      name: "Sheet Recognizer",
+      name: "Vision-based Multi-rotor Aerial Vehicles Tracking for a Moving Object (Publication)",
       pictures: [
         {
           img: require("./src/assets/portfolio/msr/one.png")
@@ -181,17 +182,18 @@ let info = {
           img: require("./src/assets/portfolio/msr/four.png")
         }
       ],
-      technologies: ["Computer Vision", "OpenCV", "AI", "Flask", "Sockets"],
-      category: "Algorithm",
-      date: "Jan, 2020 - Mar, 2020",
+      technologies: ["Visual Object Tracking", "Deep Learning", "Camera Calibration", "Epipolar Geometry",
+      "ROS", "Python", "C++", "PyTorch", "OpenCV", "Docker", "Linux","NVidia Jetson Hardware", "TensorRT"],
+      category: "Research",
+      date: "October, 2021 - July, 2022",
       github:
-        "https://github.com/hrishikeshpaul/music-sheet-recognizer-backend",
-      visit: "https://github.com/hrishikeshpaul/music-sheet-recognizer-backend",
+        "https://github.com/mhd-medfa/Single-Object-Tracker",
+      visit: "https://sites.google.com/view/3d-siammask",
       description:
-        "Music Sheet Recognizer (MSR) highlights basic Image Processing and Recognition. Like Optical Character Recognition, this tool is used to detect music notes and rests. It makes use of basic Computer Vision techniques such as Convolution, Edge Detections, Hough Transforms and Template Matching to detect notes and rests on a music sheet. "
+        "3D-SiamMask: Vision-based tracking system for multi-rotor aerial vehicles that could follow a moving object in real-time. The project involved the use of various technologies, including Visual Object Tracking, Deep Learning, Camera Calibration, and Epipolar Geometry, as well as software and hardware tools such as ROS, Python, C++, PyTorch, OpenCV, Docker, Linux, NVidia Jetson Hardware, and TensorRT. The results of this project were published in a Q1 journal, and my contribution to the research and development process was significant. This project was completed as part of my Master's degree program and involved extensive research and development work."
     },
     {
-      name: "NoQ Job Portal",
+      name: "RETA (Restaurant ETA)",
       pictures: [
         {
           img: require("./src/assets/portfolio/noq/logo.png")
@@ -209,13 +211,19 @@ let info = {
           img: require("./src/assets/portfolio/noq/four.png")
         }
       ],
-      technologies: ["Node", "Vue", "Express", "MongoDB", "Heroku"],
-      category: "Website",
-      date: "Sep, 2019 - Dec  , 2019",
-      github: "https://github.com/hrishikeshpaul/noq",
-      visit: "https://noq-client.herokuapp.com/",
+      technologies: ["Clustering",
+      "Python",
+      "Redis",
+      "MariaDB",
+      "OSRM",
+      "Flask",
+      "Data Analysis",
+      "Real-time Machine Learning"],
+      category: "Production",
+      date: "Feb, 2021 - May, 2021",
+      visit: "https://beeorder.com/",
       description:
-        "No Q, is a revolutionary tool which allows for both employers and students to skip the hassle seen in modern day career fairs. For the students, there is an intuitive profile builder where you can add things like education, skills, certifications, honors, and experiences. No Q is not only good for students, but employers as well! A common problem at modern career fairs is the number of unqualified candidates who waste their time when they could be chatting with someone else. With No Q, only the students who meet the positions’ criteria will be able to apply, and from there the recruiter can invite them to talk in more detail at the career fair through our intuitive messaging system."
+        "Geo-based unsupervised learning approach to estimate delivery time across the platform's outlets: As an AI Engineer at BeeOrder, I worked on the Restaurant ETA (RETA) service, where I developed a geo-based unsupervised learning approach to estimate delivery time across the platform's outlets. This project required the use of various technologies, including Clustering, Python, Redis, MariaDB, OSRM, Flask, and others. The goal of the project was to improve the accuracy and efficiency of the delivery time estimation process, which would ultimately benefit both the restaurants and their customers. In order to achieve this goal, I implemented advanced machine learning techniques and optimized the system for real-time performance. The successful completion of this project helped to drive the growth and success of the company."
     },
     {
       name: "POST",
