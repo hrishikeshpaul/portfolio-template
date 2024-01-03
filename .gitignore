@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/dist
 
 firebase.json
 .firebase
@@ -25,3 +24,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+config.js
